@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+
 body {
-  padding-right: 50px
+  padding-right: 50px;
   background-color: white;
   color: black;
   font-size: 30px;
@@ -22,9 +23,10 @@ h1{
     letter-spacing: 1.2px;
     font-size: 32px;
 }
-p {
-  width: 60%
+p, h2 {
+  width: 60%;
   }
+
 #tinytext{
 font-size: 15px
 
@@ -47,8 +49,10 @@ font-size: 15px
  overflow-x: hidden; /* Disable horizontal scroll */
  padding-top: 60px; /* Place content 60px from the top */
  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+ text-align: right;
 
 }
+
 
 /* The navigation menu links */
 .sidenav a {
@@ -104,6 +108,7 @@ font-size: 15px
 .column {
   float: left;
   width: 30%;
+  height: auto;
   text-align: center;
   vertical-align: center;
 }
@@ -115,24 +120,17 @@ font-size: 15px
   display: table;
 }
 
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
-
-    p {
-        width: 100%;
-    }
-}
 
 /*special menu column and bar formats*/
-#col1 {
+#menu {
   padding-top: 25px;
-  width: 50px;
-  text-align: right;
+  position: absolute;
+  top: 30px;
+  right: 55px;
 }
 #col2 {
-  width: 300px;
+  width: 100%;
+  text-align: left;
 
 }
 
@@ -217,55 +215,59 @@ font-size: 15px
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .gridcolumn {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .gridcolumn {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
 
 
 /* sections*/
 section{
-padding: 30px
+padding: 30px;
+height: auto;
 
 }
 #sectiopntitle {
-      height: 100px;
     }
 #sectionblank {
-      height: 200px;
       text-align: left;
+      height: 100px
     }
 #section1 {
-      height: 200px;
+      position: relative;
       text-align: left;
-      width: 60%;
     }
 #section2 {
       background-color: black;
       color: white;
-      height: 300px;
-      padding: 30px;
     }
 #section3 {
           background-color: lightgray;
           color: black;
-          height: 300px;
         }
 #section4 {
           background-color: black;
           color: white;
           height: 200px;
-          padding-top: 60px
+          padding-top: 60px;
+        }
+
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+          .gridcolumn {
+            flex: 50%;
+            max-width: 50%;
+          }
+          .column {
+            width: 100%;
+          }
+
+            p, h2 {
+                width: 100%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .gridcolumn {
+            flex: 100%;
+            max-width: 100%;
+          }
         }
