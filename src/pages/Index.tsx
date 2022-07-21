@@ -4,9 +4,10 @@ import { useMediaQuery } from 'react-responsive'
 
 import { CaretDownFill } from 'react-bootstrap-icons';
 
-const Home = () =>
+const Main = () =>
   <Layout>
     <div id="content" className="container">
+    <div id="black"></div>
       <Section id="about" name="About">
         <h5>Me</h5>
         <p>
@@ -18,27 +19,31 @@ const Home = () =>
           In my free time, I enjoy recreational programming (especially in C).
           I currently work at <a href="https://innexgo.com">Innexgo</a>, making educational software.
         </p>
-        <ul>
-          <li><a href="https://github.com/pimpale/">Github</a></li>
-          <li><a href="https://www.linkedin.com/in/govind-pimpale/">LinkedIn</a></li>
-        </ul>
-        <h5>Projects</h5>
+      </Section>
+      <Section id="information" name="What we do text">
+        <h4>What we're currently working on...</h4>
         <p>
-          Most of my projects are licensed permissively, usually under MIT or the Unlicense. If they're not on the site,
-          you can find them <a href="https://github.com/pimpale/">here</a>. You can also follow me on github to keep up to date on their development.
+          text
         </p>
-        <h5>Site</h5>
+        <h4>Some projects we've worked on in the past</h4>
         <p>
-          This site was made
-          using <a href="https://reactjs.org/">ReactJS</a> and <a href="https://www.typescriptlang.org/">Typescript</a>,
-          with the animations in <a href="https://threejs.org/">three.js</a>.
-          All content on this site is licensed under the MIT license unless otherwise specified.
-          The source of this website can be found <a href="https://github.com/pimpale/pimpale.github.io">here</a>.
+          text
         </p>
+      </Section>
+
+      <Section id="join" name="Our Team">
+        <h4>button</h4>
+
+      </Section>
+      <Section id="join" name="Join Us">
+        <button/>
+        <p> </p>
+        <h4>Contact</h4>
+
+
       </Section>
     </div>
   </Layout>
-
 
 import React from 'react';
 import { createRoot } from 'react-dom/client';
@@ -51,9 +56,7 @@ import 'bootstrap/dist/js/bootstrap';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home/>
+    <Main/>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-
