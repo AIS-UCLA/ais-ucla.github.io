@@ -2,28 +2,10 @@ import Layout from '../components/Layout';
 import Section from '../components/Section';
 import { useMediaQuery } from 'react-responsive'
 
-const TerrainGenerationUrl = '/terraingeneration1.html';
-
 import { CaretDownFill } from 'react-bootstrap-icons';
-
-type IntroCardProps = {
-  title: string,
-  children: React.ReactNode
-}
-
-const IntroCard: React.FunctionComponent<IntroCardProps> = props =>
-  <div className="card" style={{ width: "15rem" }}>
-    <div className="card-body">
-      <h5 className="card-title">{props.title}</h5>
-      <div className="card-text">{props.children}</div>
-    </div>
-  </div>
-
 
 const Home = () =>
   <Layout>
-    <div className="min-vh-100 d-flex justify-content-center flex-wrap">
-    </div>
     <div id="content" className="container">
       <Section id="about" name="About">
         <h5>Me</h5>
@@ -52,45 +34,6 @@ const Home = () =>
           with the animations in <a href="https://threejs.org/">three.js</a>.
           All content on this site is licensed under the MIT license unless otherwise specified.
           The source of this website can be found <a href="https://github.com/pimpale/pimpale.github.io">here</a>.
-        </p>
-      </Section>
-      <Section id="innexgo" name="Innexgo">
-        <p>
-          In 2018 I helped create Innexgo, an open source student attendance system. Innexgo uses RFID stickers to automatically take
-          attendance without wasting student or teacher time and provides data analysis tools for converting raw attendance data to useful
-          graphs and statistics.
-        </p>
-        <p>
-          <a href="https://innexgo.com">Company Website</a>
-          <br />
-          <a href="https://github.com/innexgo">Source Code</a>
-        </p>
-      </Section>
-      <Section id="achernar" name="Achernar">
-        <h5>Goals</h5>
-        Achernar is a <b><i>Work In Progress</i></b> programming language focusing on:
-        <ul>
-          <li>
-            <b>Minimalism</b>: Achernar strives to be <i>orthogonal</i>.
-            Language features are simple to understand, independent, and highly composable.
-            As such, minimalism is both possible and ergonomic.
-          </li>
-          <li><b>Versatility</b>: Achernar does not lock the user into any particular framework and is highly unopinionated.
-            Use Achernar compiled or interpreted. It can be easily dropped into any existing project without dragging in any dependencies.
-          </li>
-          <li><b>Safe</b>: Achernar is designed with type safety in mind. It is strongly typed and offers additional Ada
-            style contract programming.
-          </li>
-        </ul>
-        <h5>Current Status</h5>
-        <p>
-          I am currently about 50% through writing the first compiler in C that will compile Achernar code.
-          The compiler uses its own custom standard library called <code>comlib</code> that will evolve into Achernar's standard library.
-        </p>
-        <h5>Additional Information</h5>
-        <p>
-          <a href="https://github.com/pimpale/achernar">Achernar Source Code</a>
-          <br />
         </p>
       </Section>
     </div>
