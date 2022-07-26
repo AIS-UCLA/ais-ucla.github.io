@@ -9,15 +9,16 @@ const Main = () =>
     <div id="content" className="container">
     <div id="black"></div>
       <Section id="about" name="About">
-        <h5>Me</h5>
+        <h5>What we do...</h5>
         <p>
-          I'm a student at UCLA, studying Computer Science and Engineering.
-          I believe in <a
+        We are a UCLA club invested in the development of safe and robust AI systems.
+        AI Safety at UCLA provides a wide range of opportunities for students of all backgrounds
+         to become involved in the AI Safety community.
+ <a
             href="https://globalprioritiesinstitute.org/summary-the-case-for-strong-longtermism/">
-            Strong Longtermism
-          </a> and the <a href="https://suckless.org/philosophy/">Suckless philosophy</a>.
-          In my free time, I enjoy recreational programming (especially in C).
-          I currently work at <a href="https://innexgo.com">Innexgo</a>, making educational software.
+             [link to get involved]
+          </a>
+
         </p>
       </Section>
       <Section id="information" name="What we do text">
@@ -31,16 +32,19 @@ const Main = () =>
         </p>
       </Section>
 
-      <Section id="join" name="Our Team">
-        <h4>button</h4>
-
-      </Section>
-      <Section id="join" name="Join Us">
+      <Section id="join" name="Get Involved">
+        <h4>Call to Action</h4>
+        <p>call to action</p>
+        <p>apply to do research</p>
+        <p>newsletter signup</p>
+        <p>link to get involved</p>
         <button/>
-        <p> </p>
-        <h4>Contact</h4>
+      </Section>
 
-
+      <Section id="contact" name="Contact">
+        <h4>Questions?</h4>
+        <p>contact us:</p>
+        <button/>
       </Section>
     </div>
   </Layout>

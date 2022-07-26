@@ -19,6 +19,7 @@ const Header = () =>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           {/*Right Aligned*/}
           <div className="navbar-nav ms-auto">
+          <a href={"/"} className="nav-item nav-link"><strong>Home</strong></a>
             <a href={AboutUrl} className="nav-item nav-link"><strong>About</strong></a>
             <a href={ProjectsUrl} className="nav-item nav-link"><strong>Projects</strong></a>
             <a href={JoinUrl} className="nav-item nav-link"><strong>Join Us</strong></a>
