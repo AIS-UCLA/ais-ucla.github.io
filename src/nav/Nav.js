@@ -7,35 +7,26 @@ import './Nav.css';
 const Nav = () => {
 	return (
 
-		<nav>
-		<div class="lhs">
-		AI Safety Group at UCLA
-		</div>
-		<div class="rhs">
-			{navLinks.map(({ navLinkId, scrollToId }, idx) => (
-				<NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
-			))}
-		</div>
-
-
+		<nav className={"navbar navbar-expand-lg py-3"}>
+      <div className="container d-flex">
+        <a className="navbar-brand" href="/"><div className="lhs">AI Safety Group at UCLA</div></a>
         {/*Collapsible Button*/}
         <button type="button" className="navbar-toggler border-0"
-          data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
         >
           <ThreeDotsVertical className="text-body" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           {/*Right Aligned*/}
-						<div className="navbar-nav ms-auto">
-		          <a href={"/"} className="nav-item nav-link"><strong>Home</strong></a>
-		            <a href={"/"} className="nav-item nav-link"><strong>About</strong></a>
-		            <a href={"/"} className="nav-item nav-link"><strong>Projects</strong></a>
-		            <a href={"/"} className="nav-item nav-link"><strong>Join Us</strong></a>
-		        </div>
+          <div className="navbar-nav ms-auto">
+					{navLinks.map(({ navLinkId, scrollToId }, idx) => (
+						<NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
+					))}
+          </div>
         </div>
-
-		</nav>
+      </div>
+    </nav>
 	);
 };
 

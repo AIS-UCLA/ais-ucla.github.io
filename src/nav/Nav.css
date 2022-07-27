@@ -11,16 +11,24 @@ nav {
 	font-weight: bold;
 	display: flex;
 }
+.navbar{
+position: sticky !important;
+top: 0;
+z-index: 10;
+max-height: 5em;
+padding-bottom: 20em !important;
+background-color:  white;
 
-.rhs{
-text-align: right;
-flex: 50%;
+}
+
+#navbarSupportedContent{
+	background: white !important;
 }
 
 .lhs{
 text-align: left;
-flex: 50%;
 font-size: 27px;
+padding-top: 0.5em;
 margin: 0.2em;
 padding-bottom: 0.3em;
 }
@@ -31,9 +39,7 @@ nav span {
 	transition: border-bottom 0.2s ease;
 	transition-delay: 0.25s;
 	margin: 1em;
-	padding-top: 3em;
 	margin-top: 2em;
-	padding-bottom: 0.3em;
 }
 
 nav span:hover {
@@ -51,4 +57,7 @@ nav span.activeClass i {
 
 nav span.activeClass {
 	border-bottom-color: var(--lightAccent);
+}
+.navbar-collapse.in {
+    display: block !important;
 }
