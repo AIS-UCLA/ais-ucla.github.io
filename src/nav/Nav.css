@@ -4,14 +4,15 @@ nav {
 	z-index: 10;
 	top: 0;
 	padding: 1.2em 0;
-	color: white;
-	background-color: var(--darkAccent);
+	color: black;
+	background-color: white; /* var(--darkAccent); */
 	max-height: 4em;
+	text-align: right;
 }
 
 nav span {
 	font-size: 18px;
-	border-bottom: 1px solid transparent;
+	border-bottom: 1px solid;
 	transition: border-bottom 0.2s ease;
 	transition-delay: 0.25s;
 	margin: 1em;
