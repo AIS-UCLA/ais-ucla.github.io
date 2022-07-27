@@ -1,6 +1,6 @@
 {
-	"homepage": "ais-ucla.github.io/ais-ucla.github.io",
-	"name": "single-page-nav",
+	"homepage": "https://ais-ucla.github.io/ais-ucla.github.io",
+	"name": "ais-ucla-website",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {

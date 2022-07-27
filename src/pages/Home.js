@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNav } from '../customHooks/useNav';
 import './Page.css';
+import logo from './images/logo.png';
 
 const Home = () => {
 	// useNav takes in a navLinkId and returns a ref
@@ -13,12 +14,12 @@ const Home = () => {
 	return (
 		<section ref={homeRef} id='homeContainer'>
 			<img
-				src='https://source.unsplash.com/random/600x600/?nature,water'
-				alt='unsplash-img'
+				src={logo}
+				alt='AI Safety at UCLA logo'
 			/>
 			<div>
-				<h3>HOME</h3>
-				<p>This is the home section</p>
+				<h3 id='homeTitle'>AI Safety at UCLA</h3>
+				<p id='homeText'>This is the home section</p>
 			</div>
 		</section>
 	);

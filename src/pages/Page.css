@@ -42,3 +42,19 @@ section div {
 		max-width: 100vw;
 	}
 }
+
+
+/*home styles*/
+#homeContainer{
+	background-image: url("images/galaxy.jpeg");
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+#homeTitle{
+	font-size: 4em;
+	color: white;
+}
+#homeText{
+	font-size: 2em;
+	color: white;
+}
