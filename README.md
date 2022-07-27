@@ -1,7 +1,12 @@
 # AI Safety @ UCLA website
-yarn start
+npm start
 
-## to deploy
-yarn run build
-yarn run deploy
-yarn gh-pages -d build
+## install
+npm i
+
+## to build
+npm run build
+
+
+
+

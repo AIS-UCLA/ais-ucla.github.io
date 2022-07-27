@@ -16,6 +16,7 @@ const Home = () => {
 			<img
 				src={logo}
 				alt='AI Safety at UCLA logo'
+				height='50%'
 			/>
 			<div>
 				<h3 id='homeTitle'>AI Safety at UCLA</h3>
