@@ -1,3 +1,3 @@
 # AI Safety @ UCLA website
-npm start
+yarn start
 

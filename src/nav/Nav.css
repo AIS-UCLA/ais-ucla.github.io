@@ -7,7 +7,21 @@ nav {
 	color: black;
 	background-color: white; /* var(--darkAccent); */
 	max-height: 4em;
-	text-align: right;
+	font-weight: bold;
+	display: flex;
+}
+
+.rhs{
+text-align: right;
+flex: 50%;
+}
+
+.lhs{
+text-align: left;
+flex: 50%;
+font-size: 27px;
+margin: 0.2em;
+padding-bottom: 0.3em;
 }
 
 nav span {
@@ -16,6 +30,8 @@ nav span {
 	transition: border-bottom 0.2s ease;
 	transition-delay: 0.25s;
 	margin: 1em;
+	padding-top: 3em;
+	margin-top: 2em;
 	padding-bottom: 0.3em;
 }
 
