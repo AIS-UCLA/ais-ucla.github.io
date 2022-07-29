@@ -15,8 +15,8 @@ nav {
 position: sticky !important;
 top: 0;
 z-index: 10;
-max-height: 5em;
-padding-bottom: 20em !important;
+max-height: 4em;
+padding-bottom: 2em !important;
 background-color:  white;
 }
 
@@ -28,18 +28,18 @@ background-color:  white;
 .lhs{
 text-align: left;
 font-size: 27px;
-padding-top: 0.5em;
-margin: 0.2em;
-padding-bottom: 0.3em;
+}
+.navbar-brand, a.navbar-brand:hover{
+	color: black;
 }
 
+/*the links*/
 nav span {
 	font-size: 18px;
 	border-bottom: 1px solid;
 	transition: border-bottom 0.2s ease;
 	transition-delay: 0.25s;
 	margin: 1em;
-	margin-top: 2em;
 }
 
 nav span:hover {

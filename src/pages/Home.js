@@ -19,7 +19,7 @@ const Home = () => {
 				height='50%'
 			/>
 			<div>
-				<h3 id='homeTitle'>AI Safety at UCLA4</h3>
+				<h3 id='homeTitle'>AI Safety at UCLA</h3>
 				<p id='homeText'>This is the home section</p>
 			</div>
 		</section>
