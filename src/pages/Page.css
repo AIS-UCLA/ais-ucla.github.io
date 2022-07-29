@@ -43,6 +43,15 @@ section div {
 
 	}
 }
+@media screen and (max-height: 500px) {
+
+	section img {
+		height: auto;
+		width: auto;
+		max-height: 50vw;
+
+	}
+}
 
 
 /*home styles*/
@@ -105,6 +114,37 @@ section div {
 }
 /*mobile responsiveness*/
 @media screen and (max-width: 600px) {
+	#homeTitle{
+		font-size: 2em;
+	}
+	#homeText{
+		font-size: 1.5em;
+	}
+	#mainlogo{
+		max-height: 50vh;
+	}
+
+	#aboutText{
+		text-align: left;
+		font-size: 2em;
+		color: black;
+		line-height: 1.5em;
+	}
+
+	#projContainer{
+		height: 200vh;
+	}
+	#projTitle{
+
+	}
+
+	#projText{
+		font-size: 1.5em;
+	}
+}
+
+
+@media screen and (max-height: 400px) {
 	#homeTitle{
 		font-size: 2em;
 	}
