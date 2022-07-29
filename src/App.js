@@ -2,8 +2,6 @@ import { Nav } from './nav';
 import { Main } from './pages';
 import NavProvider from './context/NavContext';
 import './App.css';
-// Bootstrap CSS & JS
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 	return (
