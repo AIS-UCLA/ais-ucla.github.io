@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 :root {
 	--darkAccent: rgba(2, 0, 36, 1);
 	--lightAccent: #f3d6e2;

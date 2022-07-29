@@ -12,7 +12,7 @@ const Nav = () => {
         <a className="navbar-brand" href="/"><div className="lhs">AI Safety Group at UCLA</div></a>
         {/*Collapsible Button*/}
         <button type="button" className="navbar-toggler border-0"
-          data-toggle="collapse" data-target="#navbarSupportedContent"
+          data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
         >
           <ThreeDotsVertical className="text-body" />
