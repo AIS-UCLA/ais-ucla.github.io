@@ -59,3 +59,77 @@ section div {
 	font-size: 2em;
 	color: white;
 }
+#mainlogo{
+	max-height: 60vh;
+	width: auto;
+}
+/*about styles*/
+#aboutContainer{
+	background-color: var(--lightAccent)
+}
+#aboutDiv{
+}
+
+#aboutText{
+	text-align: left;
+	font-size: 2.5em;
+	color: black;
+	line-height: 2em;
+}
+
+/*projects*/
+#projContainer{
+
+}
+#projTitle{
+
+}
+
+#projText{
+	font-size: 1.5em;
+}
+#projLHS{
+
+}
+
+#projRHS{
+
+}
+
+/*join*/
+#joinTitle{
+
+}
+#joinText{
+	font-size: 1.5em;
+}
+/*mobile responsiveness*/
+@media screen and (max-width: 600px) {
+	#homeTitle{
+		font-size: 2em;
+	}
+	#homeText{
+		font-size: 1.5em;
+	}
+	#mainlogo{
+		max-height: 50vh;
+	}
+
+	#aboutText{
+		text-align: left;
+		font-size: 2em;
+		color: black;
+		line-height: 1.5em;
+	}
+
+	#projContainer{
+		height: 200vh;
+	}
+	#projTitle{
+
+	}
+
+	#projText{
+		font-size: 1.5em;
+	}
+}

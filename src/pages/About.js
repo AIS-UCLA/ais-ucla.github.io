@@ -12,13 +12,11 @@ const About = () => {
 
 	return (
 		<section ref={aboutRef} id='aboutContainer'>
-			<img
-				src='https://source.unsplash.com/random/600x600/?nature,water'
-				alt='unsplash-img'
-			/>
-			<div>
-				<h3>ABOUT</h3>
-				<p>This is the about section</p>
+
+			<div id="aboutDiv">
+				<p id="aboutText">We are a UCLA club invested in the development of safe and robust AI systems.
+				AI Safety at UCLA provides a wide range of opportunities for students of all
+				backgrounds to become involved in the AI Safety community. </p>
 			</div>
 		</section>
 	);
