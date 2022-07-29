@@ -27,7 +27,7 @@ background-color:  white;
 
 .lhs{
 text-align: left;
-font-size: 27px;
+font-size: 1.5em;
 }
 .navbar-brand, a.navbar-brand:hover{
 	color: black;
@@ -60,4 +60,11 @@ nav span.activeClass {
 }
 .navbar-collapse.in {
     display: block !important;
+}
+
+
+@media screen and (max-width: 420px) {
+	.lhs{
+	font-size: 1em;
+	}
 }
