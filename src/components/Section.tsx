@@ -15,10 +15,6 @@ const Section: React.FunctionComponent<SectionProps> = props => {
         top: "-100px",
         visibility: "hidden",
       }}></span>
-    <div>
-      <a href={`#${props.id}`} className="float-end text-muted"><h3>#</h3></a>
-      <h2>{props.name}</h2>
-    </div>
     {props.children}
   </section>
 }
