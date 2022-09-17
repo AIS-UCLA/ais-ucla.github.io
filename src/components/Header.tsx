@@ -5,7 +5,7 @@ import Logo from "../assets/banner.png";
 const Header = () => (
     <header className=" sticky-top px-3">
         <nav className={"navbar navbar-expand-lg"}>
-            <img src={Logo} style={{ maxHeight: "5rem" }}></img>
+            <a href=""><img src={Logo} style={{ maxHeight: "5rem" }}></img></a>
             <button
                 type="button"
                 className="navbar-toggler border-0"
