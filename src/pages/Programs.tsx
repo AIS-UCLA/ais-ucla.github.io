@@ -15,7 +15,7 @@ const Home = () => (
                         <u>About</u>
                     </h4>
                     <p>
-                        The Intro to AI Safety Program is a quarter-long course
+                        The Intro to AI Safety Program is a 7 week, quarter-long course
                         which explores the impact of increasingly powerful AI
                         systems on society, explains the problems which the AI
                         safety field is currently working on, and goes over

@@ -53,7 +53,7 @@ const Home = () => (
                       fontSize: "1.5rem",
                     }}
                   />
-                  <footer className="fs-5 fw-bold ms-3">- GPT 3</footer>
+                  <footer className="fs-5 fw-bold">- GPT 3</footer>
                 </blockquote>
               </div>
             </div>
@@ -86,7 +86,7 @@ const Home = () => (
       </Section>
       <Section id="join" name="">
         <div>
-          <a href="/forms/intro"><h2 className="py-2">Join</h2></a>
+          <a href="/forms/intro.html"><h2 className="py-2">Join</h2></a>
         </div>
       </Section>
     </div>
