@@ -10,7 +10,7 @@ const Home = () => (
         <div id="content" className="container">
             <Section id="join" name="">
                 <div>
-                    <h2 className="py-2">Join</h2>
+                    <h1 className="py-2">Join</h1>
                 </div>
             </Section>
         </div>

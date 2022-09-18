@@ -3,10 +3,11 @@ import { ThreeDotsVertical } from "react-bootstrap-icons";
 import Banner from "../assets/banner.png";
 import Logo from "../assets/logo.png";
 
-const ProjectsUrl = "#projects";
-const IntroProgramUrl = "#intro";
-const WorkshopsUrl = "#workshops";
-const JoinUrl = '/forms/intro';
+const HomeUrl = "/home.html";
+const ProjectsUrl = "/projects.html";
+const ProgramsUrl = "/programs.html";
+const WorkshopsUrl = "/workshops.html";
+const JoinUrl = '/forms/intro.html';
 
 const Header = () => (
     <header className="pb-5">
@@ -36,7 +37,7 @@ const Header = () => (
                 >
                     {/*Right Aligned*/}
                     <div className="navbar-nav ms-auto">
-                        <a href={IntroProgramUrl} className="nav-item nav-link">
+                        <a href={ProgramsUrl} className="nav-item nav-link">
                             <strong>Intro to AI Safety Program</strong>
                         </a>
                         <a href={WorkshopsUrl} className="nav-item nav-link">
