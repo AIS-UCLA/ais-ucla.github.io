@@ -2,25 +2,17 @@ import { ThreeDotsVertical } from "react-bootstrap-icons";
 
 import Logo from "../assets/logo.png";
 
-const HomeUrl = "/";
-const ProjectsUrl = "/projects";
-const JoinUrl = '/join';
-const WorkshopsUrl = "/workshops";
+const HomeUrl = "/index.html";
+const ProjectsUrl = "/projects.html";
+const WorkshopsUrl = "/workshops.html";
+const JoinUrl = '/join.html';
 
 const Header = () => (
   <header className="pb-5">
     <nav className="navbar navbar-expand-lg py-3 fixed-top bg-white">
       <div className="container d-flex">
-        <a href={HomeUrl}>
-          <img
-            className="pe-3"
-            src={Logo}
-            style={{
-              maxHeight: "3.5rem"
-            }}
-          />
-        </a>
-        <a className="navbar-brand" href={HomeUrl}>
+        <a href="/"><img src={Logo} style={{ maxWidth: "3rem" }}></img></a>
+        <a className="navbar-brand justify-content-start" href="/">
           <h4>
             <b>AI Safety</b>
           </h4>
@@ -43,14 +35,14 @@ const Header = () => (
         >
           {/*Right Aligned*/}
           <div className="navbar-nav ms-auto">
-            <a href={ProjectsUrl} className="nav-item nav-link">
-              <strong>Projects</strong>
+            <a href={WorkshopsUrl} className="nav-item nav-link fw-bold">
+              Workshops
             </a>
-            <a href={WorkshopsUrl} className="nav-item nav-link">
-              <strong>Workshops</strong>
+            <a href={ProjectsUrl} className="nav-item nav-link fw-bold">
+              Workshops
             </a>
-            <a href={JoinUrl} className="nav-item nav-link">
-              <strong>Join</strong>
+            <a href={JoinUrl} className="nav-item nav-link fw-bold">
+              Join
             </a>
           </div>
         </div>
