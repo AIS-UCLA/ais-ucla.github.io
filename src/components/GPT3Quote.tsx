@@ -1,6 +1,6 @@
-import React, { CSSProperties } from "react";
+import React, { CSSProperties, useEffect } from "react";
 import style from "react-syntax-highlighter/dist/cjs/styles/prism/base16-ateliersulphurpool.light";
-import { WindupChildren, Pause, Pace } from "windups";
+import { useWindupString, defaultGetPace } from "windups";
 
 type Quote = {
   prompt: string,
@@ -92,15 +92,34 @@ const quoteList: Quote[] = [
 
 
 function GPT3Quote(props: { style?: CSSProperties, className?: string }) {
-  const [index, setIndex] = React.useState(0);
-  return <WindupChildren onFinished={() => setIndex(i => (i + 1) % quoteList.length)}>
-    <span
-      style={props.style}
-      className={props.className}
-      children={quoteList[index].quote}
-    />
-    <Pause ms={2500} />
-  </WindupChildren>
+  const [state, setState] = React.useState({ index: 0, paused: false });
+
+  useEffect(() => {
+    if (state.paused) {
+      const cancelVal = setTimeout(
+        () => setState(({ index }) => ({ paused: false, index: (index + 1) % quoteList.length })),
+        5000
+      );
+      return () => clearTimeout(cancelVal);
+    } else {
+      return undefined;
+    }
+  }, [state]);
+
+  const [str] = useWindupString(
+    quoteList[state.index].quote,
+    {
+      pace: (c) => 2 * defaultGetPace(c, undefined),
+      onFinished: () => setState(({ index, paused }) => ({ index, paused: true }))
+    }
+  );
+
+  return <span
+    style={props.style}
+    className={props.className}
+    children={str === "" ? "..." : str}
+  />
+
 }
 
 export default GPT3Quote;
