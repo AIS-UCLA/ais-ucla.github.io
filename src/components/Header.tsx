@@ -3,6 +3,7 @@ import { ThreeDotsVertical } from "react-bootstrap-icons";
 import Logo from "../assets/logo.png";
 
 const HomeUrl = "/index.html";
+const ProgramsUrl = "/programs.html";
 const ProjectsUrl = "/projects.html";
 const WorkshopsUrl = "/workshops.html";
 const JoinUrl = '/join.html';
@@ -11,11 +12,9 @@ const Header = () => (
   <header className="pb-5">
     <nav className="navbar navbar-expand-lg py-3 fixed-top bg-white">
       <div className="container d-flex">
-        <a href="/"><img src={Logo} style={{ maxWidth: "3rem" }}></img></a>
-        <a className="navbar-brand justify-content-start" href="/">
-          <h4>
-            <b>AI Safety</b>
-          </h4>
+        <a href={HomeUrl}><img src={Logo} style={{ maxWidth: "3rem" }}></img></a>
+        <a className="navbar-brand justify-content-start fw-bold" href={HomeUrl}>
+          <h4>AI Safety</h4>
         </a>
         {/*Collapsible Button*/}
         <button
@@ -35,6 +34,9 @@ const Header = () => (
         >
           {/*Right Aligned*/}
           <div className="navbar-nav ms-auto">
+            <a href={ProgramsUrl} className="nav-item nav-link fw-bold">
+              Programs
+            </a>
             <a href={WorkshopsUrl} className="nav-item nav-link fw-bold">
               Workshops
             </a>
