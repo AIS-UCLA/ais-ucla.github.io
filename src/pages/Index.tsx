@@ -49,7 +49,7 @@ const Home = () => (
                 <blockquote className="border border-dark border-2 p-3">
                   <GPT3Quote
                     style={{
-                      backgroundColor: "lightgreen",
+                      backgroundColor: "#d2f4d3",
                       fontSize: "1.5rem",
                     }}
                   />
