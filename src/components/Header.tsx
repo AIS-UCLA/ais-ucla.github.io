@@ -7,7 +7,7 @@ const HomeUrl = "/home.html";
 const ProjectsUrl = "/projects.html";
 const ProgramsUrl = "/programs.html";
 const WorkshopsUrl = "/workshops.html";
-const JoinUrl = '/forms/intro.html';
+const JoinUrl = '/join.html';
 
 const Header = () => (
     <header className="pb-5">
