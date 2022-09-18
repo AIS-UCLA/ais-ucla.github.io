@@ -6,39 +6,57 @@ import { CaretDownFill } from "react-bootstrap-icons";
 import Logo from "../assets/logo.png";
 import Banner from "../assets/banner.png";
 
+import GPT3Quote from "../components/GPT3Quote";
+
 const Home = () => (
   <Layout>
     <div id="content" className="container">
       <Section id="home" name="">
-        <div className="d-flex flex-row flex-wrap p-2 justify-content-start ">
-          <img
-            className="d-block me-5"
-            src={Logo}
-            style={{
-              maxHeight: "15rem",
-            }}
-          />
+        <div className="row">
+          <div className="col-xl-2 col-md-4">
+            <img
+              className="mx-auto"
+              src={Logo}
+              style={{
+                maxHeight: "15rem",
+              }}
+            />
+          </div>
 
-          <div className="d-flex flex-column justify-content-center">
-            <div className="fw-bold fs-1">
-              AI Safety
-            </div>
-            <div className="text-secondary fs-4 text-end">
-              at UCLA
+          <div className="col-xl-5 col-md-8">
+            <div className="d-inline-block mx-auto">
+              <div className="d-flex flex-column justify-content-center">
+                <div style={{ fontWeight: "bold", fontSize: "5rem" }}>
+                  AI Safety
+                </div>
+                <div className="text-secondary" style={{ fontSize: "2rem", textAlign: "end" }}>
+                  at UCLA
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="my-2" style={{ maxWidth: "30rem" }}>
-            AI Safety at UCLA researches the impact of
-            increasingly powerful AI systems. We promote the
-            development of fair, secure, and useful AI tools.
-            Join us if you'd like to learn about AI Safety and
-            research how we can use AI to build a better future.
-          </div>
-          <div className="border border-dark border-2 my-2" >
-            <p className="px-2 pt-3">
-              "Better AI Safe than AI Sorry"
-            </p>
+          <div className="col-xl-5 fs-5 pt-5">
+            <div className="d-flex flex-column">
+              <div>
+                AI Safety at UCLA researches the impact of
+                increasingly powerful AI systems. We promote the
+                development of fair, secure, and useful AI tools.
+                Join us if you'd like to learn about AI Safety and
+                research how we can use AI to build a better future.
+              </div>
+              <div className="pt-5"style={{ height: "13rem" }}>
+                <blockquote className="border border-dark border-2 p-3">
+                  <GPT3Quote
+                    style={{
+                      backgroundColor: "lightgreen",
+                      fontSize: "1.5rem",
+                    }}
+                  />
+                  <footer className="fs-5 fw-bold ms-3">- GPT 3</footer>
+                </blockquote>
+              </div>
+            </div>
           </div>
         </div>
       </Section>
