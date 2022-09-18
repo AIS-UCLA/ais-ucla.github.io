@@ -12,8 +12,8 @@ const Header = () => (
   <header className="pb-5">
     <nav className="navbar navbar-expand-lg py-3 fixed-top bg-white">
       <div className="container d-flex">
-        <a href={HomeUrl}><img src={Logo} style={{ maxWidth: "3rem" }}></img></a>
-        <a className="navbar-brand justify-content-start fw-bold" href={HomeUrl}>
+        <a href={HomeUrl}><img src={Logo} style={{ maxHeight: "3.5rem" }}></img></a>
+        <a className="ms-3 navbar-brand justify-content-start fw-bold" href={HomeUrl}>
           <h4>AI Safety</h4>
         </a>
         {/*Collapsible Button*/}
@@ -41,7 +41,7 @@ const Header = () => (
               Workshops
             </a>
             <a href={ProjectsUrl} className="nav-item nav-link fw-bold">
-              Workshops
+              Projects
             </a>
             <a href={JoinUrl} className="nav-item nav-link fw-bold">
               Join
