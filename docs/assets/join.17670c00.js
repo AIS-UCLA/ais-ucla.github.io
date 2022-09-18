@@ -1,0 +1,1 @@
+import{c as n,j as e,R as o,L as c,S as t}from"./style.909ee4b0.js";const i=()=>e(c,{children:e("div",{id:"content",className:"container",children:e(t,{id:"join",name:"",children:e("div",{children:e("h1",{className:"py-2",children:"Join"})})})})}),r=n(document.getElementById("root"));r.render(e(o.StrictMode,{children:e(i,{})}));
