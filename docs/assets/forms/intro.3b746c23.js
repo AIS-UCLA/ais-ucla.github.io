@@ -1,0 +1,1 @@
+import{c as o,j as e,R as t,L as n,a as r,S as c}from"../style.3adfba8a.js";const a=()=>e(n,{children:e("div",{id:"content",className:"container",children:r(c,{id:"FormsIntro",name:"",children:[e("div",{children:e("h2",{children:"Intro to AI Safety Program Application"})}),e("div",{})]})})}),i=o(document.getElementById("root"));i.render(e(t.StrictMode,{children:e(a,{})}));

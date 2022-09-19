@@ -6,18 +6,19 @@ import { CaretDownFill } from "react-bootstrap-icons";
 import Banner from "../assets/banner.png";
 
 const Home = () => (
-    <Layout>
-        <div id="content" className="container">
-            <Section id="workshops" name="">
-                <div>
-                    <h2 className="py-2">Workshops</h2>
-                    <h4><u>About</u></h4>
-                    <h4><u>Event Timings</u></h4>
-                    <h4><u>RSVP</u></h4>
-                </div>
-            </Section>
-        </div>
-    </Layout>
+  <Layout>
+    <div id="content" className="container">
+      <Section id="workshops" name="Workshops">
+        <h4>AI Timelines Workshop</h4>
+        <p>
+          About: Form an inside view on AI timelines, the necessary innovations for AGI and when each will come, and the effects of pre-AGI AI.
+        </p>
+        <p>
+          Tentative Date: Saturday, November 12, 2022
+        </p>
+      </Section>
+    </div>
+  </Layout>
 );
 
 import React from "react";
@@ -31,7 +32,7 @@ import "../styles/style.scss";
 
 const root = createRoot(document.getElementById("root")!);
 root.render(
-    <React.StrictMode>
-        <Home />
-    </React.StrictMode>
+  <React.StrictMode>
+    <Home />
+  </React.StrictMode>
 );
