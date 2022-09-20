@@ -1,5 +1,6 @@
 import { useMediaQuery } from "react-responsive";
 import Layout from "../components/Layout";
+import HrefLink from "../components/HrefLink";
 import Section from "../components/Section";
 
 import { CaretDownFill } from "react-bootstrap-icons";
@@ -30,11 +31,10 @@ const Home = () => (
           </p>
           <h4>Eligibility</h4>
           <p>
-            Everyone is welcome to apply; an aptitude for thinking outside the box
-            and being open to new ideas will get you very far. Additionally, a basic understanding
-            of machine learning fundamentals and a conceptual knowledge of major developments in
-            the AI field within the last 5 to 10 years will help you better understand the
-            content and lessons introduced in the program.
+            <b>Everyone is welcome to apply</b> - no experience is required.
+            Being open minded to novel ideas and spending time to deeply engage with them is all that is needed.
+            That being said, a basic understanding of machine learning fundamentals or familiarity with contemporary
+            AI research would provide a good baseline for the course’s content.
           </p>
           <h4>
             <u>Apply</u>
@@ -43,7 +43,9 @@ const Home = () => (
             Applications are open!
             Deadline to apply is September 27, 11:59 pm
             Acceptances released by October 1, 11:59 pm
-            Apply Here: https://airtable.com/shr5yCUNXsBScIEcK
+          </p>
+          <p>
+            Apply Here: <HrefLi https://airtable.com/shr5yCUNXsBScIEcK
           </p>
         </div>
       </Section>
