@@ -3,7 +3,6 @@ import { ThreeDotsVertical } from "react-bootstrap-icons";
 import Logo from "../assets/logo.png";
 
 const HomeUrl = "/index.html";
-const ProgramsUrl = "/programs.html";
 const ProjectsUrl = "/projects.html";
 const EventsUrl = "/events.html";
 const JoinUrl = '/join.html';
@@ -34,9 +33,6 @@ const Header = () => (
         >
           {/*Right Aligned*/}
           <div className="navbar-nav ms-auto">
-            <a href={ProgramsUrl} className="nav-item nav-link fw-bold">
-              Programs
-            </a>
             <a href={EventsUrl} className="nav-item nav-link fw-bold">
               Events
             </a>

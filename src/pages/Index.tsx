@@ -45,7 +45,7 @@ const Home = () => (
                 Join us if you'd like to learn about AI Safety and
                 research how we can use AI to build a better future.
               </div>
-              <div className="pt-5"style={{ height: "13rem" }}>
+              <div className="pt-5" style={{ height: "13rem" }}>
                 <blockquote className="border border-dark border-2 p-3">
                   <GPT3Quote
                     style={{
@@ -60,15 +60,19 @@ const Home = () => (
           </div>
         </div>
       </Section>
-      <Section id="fellowship" name="">
-        <div>
-          <h2 className="py-2">Intro to AI Safety Program</h2>
-          <h4><u>About</u></h4>
-          <h4><u>Eligibility</u></h4>
-          <h4><u>Apply</u></h4>
-        </div>
+      <Section id="join" name="Join">
+        <p>
+          The Intro to AI Safety Program is a 7 week, quarter-long course
+          which explores the impact of increasingly powerful AI
+          systems on society, explains the problems which the AI
+          safety field is currently working on, and goes over
+          active areas of research in.
+        </p>
+        <p>
+          <b><a href="/join.html#intro">Learn More</a></b>
+        </p>
       </Section>
-      <Section id="workshops" name="">
+      <Section id="workshops" name="Projects">
         <div>
           <h2 className="py-2">Workshops</h2>
           <h4><u>About</u></h4>
@@ -76,17 +80,11 @@ const Home = () => (
           <h4><u>RSVP</u></h4>
         </div>
       </Section>
-      <Section id="projects" name="">
+      <Section id="projects" name="Projects">
         <div>
-          <h2 className="py-2">Projects</h2>
           <h4><u>About</u></h4>
           <h4><u>Eligibility</u></h4>
           <h4><u>Apply</u></h4>
-        </div>
-      </Section>
-      <Section id="join" name="">
-        <div>
-          <a href="/forms/intro.html"><h2 className="py-2">Join</h2></a>
         </div>
       </Section>
     </div>
@@ -101,6 +99,7 @@ import ReactDOM from "react-dom";
 // Bootstrap CSS & JS
 import "bootstrap/dist/js/bootstrap";
 import "../styles/style.scss";
+import HrefLink from "../components/HrefLink";
 
 const root = createRoot(document.getElementById("root")!);
 root.render(
