@@ -41,11 +41,15 @@ const Home = () => (
           </h4>
           <p>
             Applications are open!
+          </p>
+          <p>
             Deadline to apply is September 27, 11:59 pm
+          </p>
+          <p>
             Acceptances released by October 1, 11:59 pm
           </p>
           <p>
-            Apply Here: <HrefLi https://airtable.com/shr5yCUNXsBScIEcK
+            Apply Here: <HrefLink href="https://airtable.com/shr5yCUNXsBScIEcK" />
           </p>
         </div>
       </Section>
