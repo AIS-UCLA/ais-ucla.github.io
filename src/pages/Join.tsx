@@ -54,12 +54,14 @@ const JoinPage = () => (
           We promise not to spam you!
         </p>
         <p>
-          Join our Newsletter: <HrefLink href="https://airtable.com/shrImJ6z27mX3tkkA" />
+          <b>Join our Newsletter</b>: <HrefLink href="https://airtable.com/shrImJ6z27mX3tkkA" />
         </p>
         <h4>Events</h4>
         <p>
-          We host workshops throughout the quarter. Meet with other talented people in the broader AI safety community and work on challenging problems!
-          See our current workshops here: {/*<put link to workshops page here>*/}
+          We host events throughout the quarter. Meet with other talented people in the broader AI safety community and work on challenging problems!
+        </p>
+        <p>
+          See our current events here: <HrefLink href="/events.html" />
         </p>
       </Section>
       <Section id="project_proposals" name="Project Proposals">
@@ -67,7 +69,7 @@ const JoinPage = () => (
           If you have AI safety project ideas, we would love to hear them!
         </p>
         <p>
-          Project application: <HrefLink href="https://airtable.com/shr9qTP5wgMevAY9e" />
+          <b>Project application</b>: <HrefLink href="https://airtable.com/shr9qTP5wgMevAY9e" />
         </p>
       </Section>
     </div>

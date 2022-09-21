@@ -39,11 +39,9 @@ const Home = () => (
           <div className="col-xl-5 fs-5 pt-5">
             <div className="d-flex flex-column">
               <div>
-                AI Safety at UCLA researches the impact of
-                increasingly powerful AI systems. We promote the
-                development of fair, secure, and useful AI tools.
-                Join us if you'd like to learn about AI Safety and
-                research how we can use AI to build a better future.
+                AI Safety at UCLA works to ensure that the development of powerful AI systems is done safely.
+                We are a research focused club which strives to provide students the tools and guidance to tackle the problems that interest them.
+                Join us if you'd like to learn about AI safety and discover how we can use AI to build a better future.
               </div>
               <div className="pt-5" style={{ height: "13rem" }}>
                 <blockquote className="border border-dark border-2 p-3">
@@ -72,7 +70,7 @@ const Home = () => (
           <b><a href="/join.html#intro">Learn More</a></b>
         </p>
       </Section>
-      <Section id="workshops" name="Projects">
+      <Section id="events" name="Events">
         <div>
           <h2 className="py-2">Workshops</h2>
           <h4><u>About</u></h4>
