@@ -64,26 +64,27 @@ const Home = () => (
           which explores the impact of increasingly powerful AI
           systems on society, explains the problems which the AI
           safety field is currently working on, and goes over
-          active areas of research in.
+          active areas of research.
         </p>
         <p>
           <b><a href="/join.html#intro">Learn More</a></b>
         </p>
       </Section>
       <Section id="events" name="Events">
-        <div>
-          <h2 className="py-2">Workshops</h2>
-          <h4><u>About</u></h4>
-          <h4><u>Event Timings</u></h4>
-          <h4><u>RSVP</u></h4>
-        </div>
+        <p>
+          We host events throughout the quarter. Meet with other talented people in the broader AI safety community and work on challenging problems!
+        </p>
+        <p>
+          <a href="/events.html"><b>Learn More</b></a>
+        </p>
       </Section>
       <Section id="projects" name="Projects">
-        <div>
-          <h4><u>About</u></h4>
-          <h4><u>Eligibility</u></h4>
-          <h4><u>Apply</u></h4>
-        </div>
+        <p>
+          If you have AI safety project ideas, we would love to hear them!
+        </p>
+        <p>
+          <b>Project application</b>: <HrefLink href="https://airtable.com/shr9qTP5wgMevAY9e" />
+        </p>
       </Section>
     </div>
   </Layout>

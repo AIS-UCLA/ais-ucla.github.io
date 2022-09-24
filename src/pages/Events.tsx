@@ -8,7 +8,7 @@ import Banner from "../assets/banner.png";
 const Home = () => (
   <Layout>
     <div id="content" className="container">
-      <Section id="workshops" name="Workshops">
+      <Section id="events" name="Events">
         <h4>Weekly Social and Dinner</h4>
         <p>
           Join us every Tuesday at 4:30 PM for weekly dinners!

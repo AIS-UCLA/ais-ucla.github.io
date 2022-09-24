@@ -6,6 +6,7 @@ const HomeUrl = "/index.html";
 const ProjectsUrl = "/projects.html";
 const EventsUrl = "/events.html";
 const JoinUrl = '/join.html';
+const ContactUrl = '/contact.html';
 
 const Header = () => (
   <header className="pb-5">
@@ -33,14 +34,17 @@ const Header = () => (
         >
           {/*Right Aligned*/}
           <div className="navbar-nav ms-auto">
+            <a href={JoinUrl} className="nav-item nav-link fw-bold">
+              Join
+            </a>
             <a href={EventsUrl} className="nav-item nav-link fw-bold">
               Events
             </a>
             <a href={ProjectsUrl} className="nav-item nav-link fw-bold">
               Projects
             </a>
-            <a href={JoinUrl} className="nav-item nav-link fw-bold">
-              Join
+            <a href={ContactUrl} className="nav-item nav-link fw-bold">
+              Contact
             </a>
           </div>
         </div>
