@@ -23,16 +23,20 @@ const ToggleableImageList = (props: ToggleableImageListProps) => {
 
   const compressedStyle = {
     overflow: "hidden" as const,
-    maxHeight: "20rem",
-    mask: `linear-gradient(180deg, black, rgba(255, 255, 255, ${opacity})) center bottom/100% 5rem no-repeat, linear-gradient(180deg, black, black) center top/100% calc(100% - 5rem) no-repeat`
+    maxHeight: "10rem",
+    mask: `linear-gradient(180deg, black, rgba(255, 255, 255, ${opacity})) center bottom/100% 5rem no-repeat, linear-gradient(180deg, black, black) center top/100% calc(100% - 5rem) no-repeat`,
+    WebkitMask: `linear-gradient(180deg, black, rgba(255, 255, 255, ${opacity})) center bottom/100% 5rem no-repeat, linear-gradient(180deg, black, black) center top/100% calc(100% - 5rem) no-repeat`
   }
 
-  return <div
-    className="row g-3"
-    style={expanded ? expandedStyle : compressedStyle}
-    onClick={() => setExpanded(true)}
-  >
-    {props.children.map((c, i) => <div key={i} className="col d-flex justify-content-center">{c}</div>)}
+  return <div className="text-center">
+    <div
+      className="row g-3"
+      style={expanded ? expandedStyle : compressedStyle}
+      onClick={() => setExpanded(true)}
+    >
+      {props.children.map((c, i) => <div key={i} className="col d-flex justify-content-center">{c}</div>)}
+    </div>
+    <button className='btn btn-primary' onClick={() => setExpanded(!expanded)}>{expanded ? "Hide" : "Show"}</button>
   </div>
 }
 
@@ -147,7 +151,7 @@ const Home = () => (
         links={[
           { key: "Demo", url: "https://critica.ais-ucla.org" },
           { key: "Source code", url: "https://github.com/ais-ucla/critica" },
-          { key: "Inspired by", url: "https://github.com/ais-ucla/critica" },
+          { key: "Inspired by", url: "https://www.gwern.net/Fake-Journal-Club" },
         ]}
       />
     </div>
