@@ -11,13 +11,14 @@ const Contact = () => (
       <Section id="board" name="Board">
         <p>
           <b>Govind Pimpale</b> - Board Member
+          <ul>
+            <li>Founder and President</li>
+            <li>Special Interests: Reinforcement Learning, Z3, Proof Solvers, Cybersecurity, Linux</li>
+            <li>Discord: `i use arch btw#9204`</li>
+            <li>Email: gpimpale29@gmail.com</li>
+          </ul>
         </p>
-        <ul>
-          <li>Founder and President</li>
-          <li>Special Interests: Reinforcement Learning, Z3, Proof Solvers, Cybersecurity, Linux</li>
-          <li>Discord: `i use arch btw#9204`</li>
-          <li>Email: gpimpale29@gmail.com</li>
-        </ul>
+
         <p>
           <b>Aiden Ament</b> - Board Member
         </p>
