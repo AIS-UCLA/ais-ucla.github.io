@@ -10,24 +10,31 @@ const Contact = () => (
     <div id="content" className="container">
       <Section id="board" name="Board">
         <p>
-          <b>Govind Pimpale</b> - Board Member
-          <ul>
-            <li>Founder and President</li>
-            <li>Special Interests: Reinforcement Learning, Z3, Proof Solvers, Cybersecurity, Linux</li>
-            <li>Discord: `i use arch btw#9204`</li>
-            <li>Email: gpimpale29@gmail.com</li>
-          </ul>
+          <b>Govind Pimpale</b> - Founder and President
         </p>
+        <ul>
+          <li>Special Interests: Reinforcement Learning, Z3, Proof Solvers, Cybersecurity, Linux</li>
+          <li>Discord: `i use arch btw#9204`</li>
+          <li>Email: gpimpale29@gmail.com</li>
+        </ul>
 
         <p>
-          <b>Aiden Ament</b> - Board Member
+          <b>Aiden Ament</b> - Founder and Fellowship Director
         </p>
+        <ul>
+          <li>Special Interests: Out of Distribution detection, ML Research, general mathematics</li>
+          <li>Email: Aidenament888@gmail.com</li>
+        </ul>
         <p>
           <b>Sophia Chen</b> - Board Member
         </p>
         <p>
-          <b>Mario Peng</b> - Board Member
+          <b>Mario Peng</b> - Founder and NLP Research Director
         </p>
+        <ul>
+          <li>Special Interests: Out of Distribution detection, ML Research, general mathematics</li>
+          <li>Email: Aidenament888@gmail.com</li>
+        </ul>
         <p>
           <b>Tejas Kamtam</b> - Board Member
         </p>
