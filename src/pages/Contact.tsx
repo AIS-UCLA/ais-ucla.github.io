@@ -10,34 +10,35 @@ const Contact = () => (
     <div id="content" className="container">
       <Section id="board" name="Board">
         <p>
-          <b>Govind Pimpale</b> - Founder and President
+          <b>Govind Pimpale</b> - President
         </p>
         <ul>
-          <li>Special Interests: Reinforcement Learning, Z3, Proof Solvers, Cybersecurity, Linux</li>
-          <li>Discord: `i use arch btw#9204`</li>
-          <li>Email: gpimpale29@gmail.com</li>
+          <li>Interests: Reinforcement Learning, Z3, Proof Solvers, Cybersecurity, Linux</li>
         </ul>
-
         <p>
-          <b>Aiden Ament</b> - Founder and Fellowship Director
+          <b>Aiden Ament</b> - Fellowship Director
         </p>
         <ul>
-          <li>Special Interests: Out of Distribution detection, ML Research, general mathematics</li>
-          <li>Email: Aidenament888@gmail.com</li>
+          <li>Interests: Out of Distribution detection, ML Research, general mathematics</li>
         </ul>
         <p>
-          <b>Sophia Chen</b> - Board Member
-        </p>
-        <p>
-          <b>Mario Peng</b> - Founder and NLP Research Director
+          <b>Sophia Chen</b> - Vice President
         </p>
         <ul>
-          <li>Special Interests: Out of Distribution detection, ML Research, general mathematics</li>
-          <li>Email: Aidenament888@gmail.com</li>
+          <li>Interests: Electrical Engineering, MLSS Program</li>
         </ul>
         <p>
-          <b>Tejas Kamtam</b> - Board Member
+          <b>Mario Peng</b> - Research Director
         </p>
+        <ul>
+          <li>Interests: NLP, Semantics, Academic Research </li>
+        </ul>
+        <p>
+          <b>Tejas Kamtam</b> - Head of Workshops & Projects
+        </p>
+        <ul>
+          <li>Interests: Time series forecasting, NLU, quantum computing</li>
+        </ul>
       </Section>
       <Section id="contact" name="Contact Info">
         <p>
