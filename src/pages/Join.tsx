@@ -36,13 +36,10 @@ const JoinPage = () => (
         </p>
         <h4>Apply</h4>
         <p>
-          Applications are open!
+          Applications are open for Winter Quarter 2023!
         </p>
         <p>
-          Deadline to apply is September 27, 11:59 pm
-        </p>
-        <p>
-          Acceptances released by October 1, 11:59 pm
+          Applications will be processed on a rolling basis.
         </p>
         <p>
           <b>Apply Here</b>: <HrefLink href="https://airtable.com/shr5yCUNXsBScIEcK" />
