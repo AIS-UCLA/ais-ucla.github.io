@@ -42,7 +42,7 @@ const JoinPage = () => (
           Applications will be processed on a rolling basis.
         </p>
         <p>
-          <b>Apply Here</b>: <HrefLink href="https://airtable.com/shr5yCUNXsBScIEcK" />
+          <b>Apply Here</b>: <HrefLink href="https://airtable.com/shrlqFGBmpO1mvR1z" />
         </p>
       </Section>
       <Section id="newsletter" name="Newsletter">
