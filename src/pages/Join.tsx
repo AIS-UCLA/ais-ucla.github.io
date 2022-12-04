@@ -9,10 +9,10 @@ import HrefLink from "../components/HrefLink";
 const JoinPage = () => (
   <Layout>
     <div id="content" className="container">
-      <Section id="intro" name="Intro to AI Safety Program">
+      <Section id="intro" name="Intro to AI Safety Fellowship">
         <h4>About</h4>
         <p>
-          The Intro to AI Safety Program is a 7 week, quarter-long course
+          The Intro to AI Safety Fellowship is a 7 week, quarter-long course
           which explores the impact of increasingly powerful AI
           systems on society, explains the problems which the AI
           safety field is currently working on, and goes over
@@ -29,9 +29,13 @@ const JoinPage = () => (
         </p>
         <h4>Eligibility</h4>
         <p>
-          <b>Everyone is welcome to apply</b> - no experience is required.
-          Being open minded to novel ideas and spending time to deeply engage with them is all that is needed.
-          That being said, a basic understanding of machine learning fundamentals or familiarity with contemporary
+          We're looking for students who meet any of the following requirements:
+          <ul>
+            <li>Have taken CS 31 or an equivalent class</li>
+            <li>Have worked on a Python project (either a personal one or for an internship)</li>
+            <li>Have strong skills in another programming language</li>
+          </ul>
+          Additionally, a basic understanding of machine learning fundamentals and familiarity with contemporary
           AI research would provide a good baseline for the course’s content.
         </p>
         <h4>Apply</h4>

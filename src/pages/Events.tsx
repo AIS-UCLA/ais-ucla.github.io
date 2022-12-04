@@ -23,54 +23,28 @@ const Home = () => (
         <p>
           <b>Where</b>: Grass next to Tongva Steps
         </p>
-        <h4>AI Movie Marathon</h4>
+        <h4>Define, Design, and Align</h4>
         <p>
-          To get in the Halloween spirit, we’re hosting an AI movie marathon.
-          Come join us in binge watching Sci-Fi movies which highlight the dangers of AI.
-          Food and snacks will be provided, but we’re still deciding on movies.
-          We’d love to hear your recommendations!
+          Define, Design, and Align is an intensive intercollegiate alignment workshop taking place from January 6th to January 8th in Los Angeles.
         </p>
         <p>
-          Potential Movies:
-        </p>
-        <ul>
-          <li>Prometheus</li>
-          <li>Her</li>
-          <li>Terminator Saga</li>
-          <li>Space Odyssey</li>
-          <li>Upgrade</li>
-          <li>Wall-E</li>
-        </ul>
-        <p>
-          <b>Tentative Date</b>: October 20th
+          You will collaborate with other talented students interested in AI safety to try and solve open problems in alignment
+          and develop actionable research agendas. Particularly good proposals have the potential to earn a cash prize from MIRI.
         </p>
         <p>
-          <b>Location</b>: TBD
-        </p>
-        <h4>AI Timelines Workshop</h4>
-        <p>
-          Understanding AI timelines is crucial for predicting the future and informing your next steps.
-          There is a lot of volatility in the AI community about if or when AGI will be developed,
-          and we encourage our participants to engage with a variety of different perspectives in order to inform their own view.
-          Students in the LA area are welcome to apply using the link below!
+          Apply <a href="https://airtable.com/shr4ULQzURSA9TkO1">here</a> by December 25th.
         </p>
         <p>
-          <b>Tentative Date</b>: Saturday, November 12, 2022
         </p>
         <p>
-          <b>Application Link</b>: Open Soon
-        </p>
-        <h4>Drink and Distill</h4>
-        <p>
-          Distilling complicated literature in AI safety is an invaluable exercise for you and the broader community.
-          Come enjoy sunny LA weather with others in the AI safety community, and spend a weekend distilling and socializing.
-          Students from all over the country are welcome to apply using the link below!
+          We can help reimburse your travel expenses,
+          contact <a href="mailto:aisafety.ucla@gmail.com">aisafety.ucla@gmail.com</a> if you have questions about our policy.
         </p>
         <p>
-          <b>Tentative Date</b>: Saturday, December 10th, 2022
+          <b>When</b>: January 6 - January 8, 2023
         </p>
         <p>
-          <b>Application Link</b>: Open Soon
+          <b>Where</b>: Los Angeles (address will be sent in acceptance email)
         </p>
       </Section>
     </div>
