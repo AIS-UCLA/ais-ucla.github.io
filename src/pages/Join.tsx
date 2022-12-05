@@ -31,8 +31,8 @@ const JoinPage = () => (
         <p>
           We're looking for students who meet any of the following requirements:
           <ul>
-            <li>Have taken CS 31 or an equivalent class</li>
-            <li>Have worked on a Python project (either a personal one or for an internship)</li>
+            <li>Have taken CS 31 or an equivalent class <b>OR</b></li>
+            <li>Have worked on a Python project (either a personal one or for an internship) <b>OR</b></li>
             <li>Have strong skills in another programming language</li>
           </ul>
           Additionally, a basic understanding of machine learning fundamentals and familiarity with contemporary
