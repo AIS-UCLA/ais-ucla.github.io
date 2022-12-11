@@ -28,8 +28,9 @@ const Home = () => (
           Define, Design, and Align is an intensive intercollegiate alignment workshop taking place from January 6th to January 8th in Los Angeles.
         </p>
         <p>
-          You will collaborate with other talented students interested in AI safety to try and solve open problems in alignment
-          and develop actionable research agendas. Particularly good proposals have the potential to earn a cash prize from MIRI.
+          You will collaborate with other talented students interested in AI safety to try and 
+          solve <a href="https://docs.google.com/document/d/1NVVtdsfz7HiseVFSk3jYly4sPG4dG03wFFDrD8rBXU0/edit?usp=sharing">open problems in alignment</a> and 
+          develop actionable research agendas. Particularly good proposals have the potential to earn a cash prize from MIRI.
         </p>
         <p>
           Apply <a href="https://airtable.com/shr4ULQzURSA9TkO1">here</a> by December 25th.
