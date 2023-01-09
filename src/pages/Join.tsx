@@ -58,6 +58,14 @@ const JoinPage = () => (
           <b>Join our Newsletter</b>: <HrefLink href="https://airtable.com/shrImJ6z27mX3tkkA" />
         </p>
       </Section>
+      <Section id="discord" name="Discord">
+        <p>
+          We have a Discord server where you can discuss with us.
+        </p>
+        <p>
+          <b>Discord</b>: <HrefLink href="https://discord.gg/37TzSyrwmf" />
+        </p>
+      </Section>
       <Section id="events" name="Events">
         <p>
           We host events throughout the quarter. Meet with other talented people in the broader AI safety community and work on challenging problems!
