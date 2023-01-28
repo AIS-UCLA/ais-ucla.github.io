@@ -7,6 +7,7 @@ const ProjectsUrl = "/projects.html";
 const EventsUrl = "/events.html";
 const JoinUrl = '/join.html';
 const ContactUrl = '/contact.html';
+const DiscordUrl = 'https://discord.gg/37TzSyrwmf';
 
 const Header = () => (
   <header className="pb-5">
@@ -45,6 +46,9 @@ const Header = () => (
             </a>
             <a href={ContactUrl} className="nav-item nav-link fw-bold">
               Contact
+            </a>
+            <a href={DiscordUrl} className="nav-item nav-link fw-bold">
+              Discord
             </a>
           </div>
         </div>

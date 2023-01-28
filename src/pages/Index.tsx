@@ -18,15 +18,16 @@ const Home = () => (
               className="mx-auto"
               src={Logo}
               style={{
-                maxHeight: "15rem",
+                marginTop: "4rem",
+                maxHeight: "13rem",
               }}
             />
           </div>
 
-          <div className="col-xl-5 col-md-8">
+          <div className="col-xl-4 col-md-8">
             <div className="d-inline-block mx-auto">
               <div className="d-flex flex-column justify-content-center">
-                <div style={{ fontWeight: "bold", fontSize: "5rem" }}>
+                <div style={{ fontWeight: "bold", fontSize: "4rem", marginTop: "4rem", }}>
                   AI Safety
                 </div>
                 <div className="text-secondary" style={{ fontSize: "2rem", textAlign: "end" }}>
@@ -36,7 +37,7 @@ const Home = () => (
             </div>
           </div>
 
-          <div className="col-xl-5 fs-5 pt-5">
+          <div className="col-xl-6 fs-5 pt-5">
             <div className="d-flex flex-column">
               <div>
                 AI Safety at UCLA works to ensure that the development of powerful AI systems is done safely.
@@ -59,6 +60,7 @@ const Home = () => (
         </div>
       </Section>
       <Section id="join" name="Join">
+        <h5>Intro </h5>
         <p>
           The Intro to AI Safety Program is a 7 week, quarter-long course
           which explores the impact of increasingly powerful AI
@@ -68,6 +70,20 @@ const Home = () => (
         </p>
         <p>
           <b><a href="/join.html#intro">Learn More</a></b>
+        </p>
+        <h5>MLAB</h5>
+        <p>
+          MLAB is an intensive technical machine learning course that builds a foundation for advanced techniques
+          from basic skills.
+          The course was created by Redwood Research (a leading AI safety research company based out of Berkeley, CA)
+          to skill up potential AI safety researchers.
+
+          This is the next step in AI Safety at UCLA.
+          We recommend everyone who has completed the Intro Fellowship apply!
+          Our program will consist of ~1 week's worth of MLAB 2 content over 6 weeks.
+        </p>
+        <p>
+          <b><a href="/join.html#mlab">Learn More</a></b>
         </p>
       </Section>
       <Section id="events" name="Events">

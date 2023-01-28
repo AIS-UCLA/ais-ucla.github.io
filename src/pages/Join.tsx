@@ -49,6 +49,37 @@ const JoinPage = () => (
           <b>Apply Here</b>: <HrefLink href="https://airtable.com/shrlqFGBmpO1mvR1z" />
         </p>
       </Section>
+      <Section id="mlab" name="MLAB Program">
+        <p>
+          MLAB is an intensive technical machine learning course that builds a foundation
+          for advanced techniques from basic skills.
+          The course was created by Redwood Research (a leading AI safety company based out of Berkeley, CA) to skill up potential AI safety researchers.
+        </p>
+        <p>
+          This is the next step in AI Safety at UCLA.
+          We recommend everyone who has completed the Intro Fellowship apply!
+          Our program will consist of ~1 week's worth of MLAB 2 content over 6 weeks.
+          Aiden and William will hold office hours each week as most of this course is asynchronous.
+          However, weekly meetings are TBA.
+        </p>
+        <p>
+          If you would like to continue working towards X-Risk reduction with AI safety at UCLA, please fill out the form below!
+        </p>
+        <p>
+          <b>Apply Here</b>: <HrefLink href="https://airtable.com/shr7C4h67HP1l7eoI" />
+        </p>
+      </Section>
+      <Section id="art" name="ART Initiative">
+        <p>
+          ART is our new initiative for real-world AI safety research.
+          We will be forming small groups of AI Safety at UCLA fellows with organizers on an approved alignment or ethics-related AI project.
+          The projects and application process will be announced next week.
+          Please note that this should and will be an intensive project and will last multiple quarters.
+        </p>
+        <p>
+          <b>Apply Here</b>: <HrefLink href="https://airtable.com/shrAL4Dus1MK6Fgxr" />
+        </p>
+      </Section>
       <Section id="newsletter" name="Newsletter">
         <p>
           Please sign up for our newsletter to stay up to date with events, important announcements, and interesting new papers in AI.
