@@ -1,6 +1,7 @@
 import { useMediaQuery } from "react-responsive";
 import Layout from "../components/Layout";
 import Section from "../components/Section";
+import HrefLink from "../components/HrefLink";
 
 import { CaretDownFill } from "react-bootstrap-icons";
 import Banner from "../assets/banner.png";
@@ -9,43 +10,31 @@ const Home = () => (
   <Layout>
     <div id="content" className="container">
       <Section id="events" name="Events">
-        <h4>Weekly Social and Dinner</h4>
+        <h4>None yet...</h4>
         <p>
-          Join us every Tuesday at 4:30 PM for weekly dinners!
-          This is a great opportunity to meet and socialize with other members and is lots of fun;
-          we provide a variety of games, puzzles, and questions to solve each week.
-          Dinner starts at 5:00 and is thrown in collaboration with the Effective Altruism club, so all food provided will be vegan.
-          We look forward to seeing you there!
+          We'll post events here as we create them.
         </p>
-        <p>
-          <b>When</b>: Tuesday, 4:30 PM Weekly
-        </p>
-        <p>
-          <b>Where</b>: Grass next to Tongva Steps
-        </p>
+      </Section>
+      <Section id="past-events" name="Past Events">
         <h4>Define, Design, and Align</h4>
         <p>
-          Define, Design, and Align is an intensive intercollegiate alignment workshop taking place from January 6th to January 8th in Los Angeles.
+          Define, Design, and Align was an intensive intercollegiate alignment workshop that took place in January 2023 in Los Angeles.
+          Participants collaborated to solve <a href="https://docs.google.com/document/d/1NVVtdsfz7HiseVFSk3jYly4sPG4dG03wFFDrD8rBXU0/edit?usp=sharing">open problems in alignment</a> and
+          develop actionable research agendas.
         </p>
         <p>
-          You will collaborate with other talented students interested in AI safety to try and 
-          solve <a href="https://docs.google.com/document/d/1NVVtdsfz7HiseVFSk3jYly4sPG4dG03wFFDrD8rBXU0/edit?usp=sharing">open problems in alignment</a> and 
-          develop actionable research agendas. Particularly good proposals have the potential to earn a cash prize from MIRI.
+          We wrote an in depth forum post about the event here: <HrefLink href="https://forum.effectivealtruism.org/posts/SkkAo8W4rg5kGrkTc/we-ran-an-alignment-workshop" />.
+        </p>
+        <h4>AI Timelines Workshop</h4>
+        <p>
+          UCLA EA ran an AI timelines retreat for community members interested in pursuing AI safety as a career.
+          Attendees sought to form inside views on the future of AI based on an object-level analysis of current AI capabilities.
         </p>
         <p>
-          Apply <a href="https://airtable.com/shr4ULQzURSA9TkO1">here</a> by December 25th.
+          This event took place on May 2022.
         </p>
         <p>
-        </p>
-        <p>
-          We can help reimburse your travel expenses,
-          contact <a href="mailto:aisafety.ucla@gmail.com">aisafety.ucla@gmail.com</a> if you have questions about our policy.
-        </p>
-        <p>
-          <b>When</b>: January 6 - January 8, 2023
-        </p>
-        <p>
-          <b>Where</b>: Los Angeles (address will be sent in acceptance email)
+          We wrote an in depth forum post about the event here: <HrefLink href="https://forum.effectivealtruism.org/posts/EZQQmhMsa36zwPeGB/we-ran-an-ai-timelines-retreat" />.
         </p>
       </Section>
     </div>
