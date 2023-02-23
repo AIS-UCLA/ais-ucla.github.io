@@ -34,10 +34,17 @@ const Contact = () => (
           <li>Interests: NLP, Semantics, Academic Research </li>
         </ul>
         <p>
-          <b>Tejas Kamtam</b> - Head of Workshops & Projects
+          <b>Tejas Kamtam</b> - Head of Workshops and Projects
         </p>
+
         <ul>
           <li>Interests: Time series forecasting, NLU, quantum computing</li>
+        </ul>
+        <p>
+          <b>Will Zhou</b> - Director of Workshops and Computational Resources
+        </p>
+        <ul>
+          <li>Interests: machine learning interpretability, simulated annealing, Kaggle</li>
         </ul>
       </Section>
       <Section id="contact" name="Contact Info">
