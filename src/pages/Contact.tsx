@@ -41,10 +41,10 @@ const Contact = () => (
           <li>Interests: Time series forecasting, NLU, quantum computing</li>
         </ul>
         <p>
-          <b>Will Zhou</b> - Director of Workshops and Computational Resources
+          <b>William Zhou</b> - Director of Workshops and Computational Resources
         </p>
         <ul>
-          <li>Interests: machine learning interpretability, simulated annealing, Kaggle</li>
+          <li>Interests: Simulated Annealing, Kaggle, Interpretability (ML)</li>
         </ul>
       </Section>
       <Section id="contact" name="Contact Info">
