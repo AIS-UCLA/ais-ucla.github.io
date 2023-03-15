@@ -40,13 +40,13 @@ const JoinPage = () => (
         </p>
         <h4>Apply</h4>
         <p>
-          Applications are open for Winter Quarter 2023!
+          Applications are open for Spring Quarter 2023!
         </p>
         <p>
           Applications will be processed on a rolling basis.
         </p>
         <p>
-          <b>Apply Here</b>: <HrefLink href="https://airtable.com/shrlqFGBmpO1mvR1z" />
+          <b>Apply Here</b>: <HrefLink href="https://airtable.com/shrTeTn0ioSI75FXp" />
         </p>
       </Section>
       <Section id="mlab" name="MLAB Program">
