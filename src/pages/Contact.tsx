@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import Section from "../components/Section";
 
 import { CaretDownFill } from "react-bootstrap-icons";
-import Banner from "../assets/banner.png";
 
 const Contact = () => (
   <Layout>
