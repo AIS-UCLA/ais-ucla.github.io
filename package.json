@@ -22,7 +22,7 @@
     "react-responsive": "^9.0.2",
     "react-syntax-highlighter": "^15.5.0",
     "sass": "^1.61.0",
-    "typescript": "^5.0.3",
+    "typescript": "^5.0.4",
     "windups": "^1.2.1"
   },
   "scripts": {
