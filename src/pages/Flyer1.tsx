@@ -26,22 +26,19 @@ import TerminatorPic from "../assets/flyer1/terminator_llm.png";
 // 
 // But there's a hitch, and that is:
 // 
-//     2. We don't yet understand how to align AI with human preferences.
+// 2. We don't yet understand how to align AI with human preferences.
 // 
-//     Current large language models (LLMs) are mostly harmless
-//     
-// 
-// 
-// 
-//     In the general case, getting a (potentially superintelligent) AI to do what we want is an open question.
-// 
-//     In our current paradigm of machine learning, we train neural networks to maximize their reward on a given dataset.
+// In our current paradigm of machine learning, we train neural networks to maximize their reward on a given dataset.
+// This means we don't explicitly tell machines what to do. Instead, we reward them when they do something
+// A consequence of this approach is that 
 // 
 // 
 // 
 // 
 // 
-//     3. As AI grows increasingly sophisticated, our ability to understand it decreases.
+// 
+// 
+// 3. As AI grows increasingly sophisticated, our ability to understand it decreases.
 // 
 // 
 // 
