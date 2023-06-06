@@ -40,33 +40,13 @@ const JoinPage = () => (
         </p>
         <h4>Apply</h4>
         <p>
-          Applications are open for Spring Quarter 2023!
+          Applications are open for Fall Quarter 2023!
         </p>
         <p>
           Applications will be processed on a rolling basis.
         </p>
         <p>
           <b>Apply Here</b>: <HrefLink href="https://airtable.com/shrTeTn0ioSI75FXp" />
-        </p>
-      </Section>
-      <Section id="mlab" name="MLAB Program">
-        <p>
-          MLAB is an intensive technical machine learning course that builds a foundation
-          for advanced techniques from basic skills.
-          The course was created by Redwood Research (a leading AI safety company based out of Berkeley, CA) to skill up potential AI safety researchers.
-        </p>
-        <p>
-          This is the next step in AI Safety at UCLA.
-          We recommend everyone who has completed the Intro Fellowship apply!
-          Our program will consist of ~1 week's worth of MLAB 2 content over 6 weeks.
-          Aiden and William will hold office hours each week as most of this course is asynchronous.
-          However, weekly meetings are TBA.
-        </p>
-        <p>
-          If you would like to continue working towards X-Risk reduction with AI safety at UCLA, please fill out the form below!
-        </p>
-        <p>
-          <b>Apply Here</b>: <HrefLink href="https://airtable.com/shr7C4h67HP1l7eoI" />
         </p>
       </Section>
       <Section id="art" name="ART Initiative">
