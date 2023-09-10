@@ -12,7 +12,7 @@ const JoinPage = () => (
       <Section id="intro" name="Intro to AI Safety Fellowship">
         <h4>About</h4>
         <p>
-          The Intro to AI Safety Fellowship is a 7 week, quarter-long course
+          The Intro to AI Safety Fellowship is a 6 week, quarter-long course
           which explores the impact of increasingly powerful AI
           systems on society, explains the problems which the AI
           safety field is currently working on, and goes over
@@ -46,27 +46,28 @@ const JoinPage = () => (
           Applications will be processed on a rolling basis.
         </p>
         <p>
-          <b>Apply Here</b>: <HrefLink href="https://airtable.com/shrTeTn0ioSI75FXp" />
+          <b>Apply Here</b>: <HrefLink href="https://forms.gle/v5Ujjo6NvjE5bDsRA" />
         </p>
       </Section>
-      <Section id="art" name="ART Initiative">
+      <Section id="art" name="Alignment Research Teams (ART)">
         <p>
           ART is our new initiative for real-world AI safety research.
           We will be forming small groups of AI Safety at UCLA fellows with organizers on an approved alignment or ethics-related AI project.
-          The projects and application process will be announced next week.
-          Please note that this should and will be an intensive project and will last multiple quarters.
+          Please note that this should and will be an intensive project, so expect to spend 3+ hours a week.
         </p>
         <p>
-          <b>Apply Here</b>: <HrefLink href="https://airtable.com/shrAL4Dus1MK6Fgxr" />
+          Feel free to apply for both the Intro Fellowship and ART!
+        </p>
+        <p>
+          <b>Apply Here</b>: <HrefLink href="https://forms.gle/MxEFyBUT8RcEstp78" />
         </p>
       </Section>
       <Section id="newsletter" name="Newsletter">
         <p>
-          Please sign up for our newsletter to stay up to date with events, important announcements, and interesting new papers in AI.
-          We promise not to spam you!
+          Please sign up for our weekly newsletter to stay up to date with events and important announcements.
         </p>
         <p>
-          <b>Join our Newsletter</b>: <HrefLink href="https://airtable.com/shrImJ6z27mX3tkkA" />
+          <b>Join our Newsletter</b>: <HrefLink href="http://eepurl.com/h9dY9P" />
         </p>
       </Section>
       <Section id="discord" name="Discord">
@@ -83,14 +84,6 @@ const JoinPage = () => (
         </p>
         <p>
           <b>See our current events here</b>: <HrefLink href="/events.html" />
-        </p>
-      </Section>
-      <Section id="project_proposals" name="Project Proposals">
-        <p>
-          If you have AI safety project ideas, we would love to hear them!
-        </p>
-        <p>
-          <b>Project application</b>: <HrefLink href="https://airtable.com/shr9qTP5wgMevAY9e" />
         </p>
       </Section>
     </div>
