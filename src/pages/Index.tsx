@@ -8,6 +8,8 @@ import Banner from "../assets/banner.png";
 
 import GPT3Quote from "../components/GPT3Quote";
 
+import Carousel from '../components/Carousel';
+
 const Home = () => (
   <Layout>
     <div id="content" className="container">
@@ -59,6 +61,14 @@ const Home = () => (
           </div>
         </div>
       </Section>
+      <Carousel 
+          contents={[
+               Logo,
+               Logo,
+               Logo,
+               Logo,
+          ]}
+      />
       <Section id="join" name="Join">
         <h5>Intro </h5>
         <p>
