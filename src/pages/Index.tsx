@@ -8,6 +8,10 @@ import Banner from "../assets/banner.png";
 
 import GPT3Quote from "../components/GPT3Quote";
 
+import MetadriveWebm from '../assets/carousel/scenario_0_closed_loop.webm';
+import AlphazeroWebm from '../assets/carousel/alphazero.webm';
+import AmogusWebm from '../assets/carousel/amogus.webm';
+import MoyaiWebm from '../assets/carousel/moyai.webm';
 import Carousel from '../components/Carousel';
 
 const Home = () => (
@@ -61,14 +65,42 @@ const Home = () => (
           </div>
         </div>
       </Section>
-      <Carousel 
+      <Section id="projects" name="Past Projects">
+        <Carousel
           contents={[
-               Logo,
-               Logo,
-               Logo,
-               Logo,
+            {
+              blurb: <div>
+                We trained a Reinforcement Learning agent to drive a car using
+                the Metadrive driving simulator.
+              </div>,
+              videoSrc: MetadriveWebm,
+              url: "https://github.com/pimpale/mdt"
+            },
+            {
+              blurb: <div>
+              </div>,
+              videoSrc: AlphazeroWebm,
+              url: "https://github.com/wz-ml/A0-Connect4"
+            },
+            {
+              blurb: <div>
+                In this work, we simulate the popular online multi-player game 'Among Us'.
+                Inspired by works like CICERO, we use multiple models to tackle different parts of a full game.
+              </div>,
+              videoSrc: AmogusWebm,
+              url: "https://github.com/pimpale/omegasus"
+            },
+            {
+              blurb: <div>
+                This project showcases a neural network cellular automaton from the paper <HrefLink href="https://distill.pub/2020/growing-ca/" />.
+                It's able to grow a 🗿 from scratch.
+              </div>,
+              videoSrc: MoyaiWebm,
+              url: "https://github.com/wz-ml/cellularimages"
+            },
           ]}
-      />
+        />
+      </Section>
       <Section id="join" name="Join">
         <h5>Intro </h5>
         <p>
