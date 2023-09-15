@@ -1,7 +1,10 @@
 import React from 'react'
+import { ArrowRight } from 'react-bootstrap-icons';
 import { useTransition, useSpringRef, animated, easings } from '@react-spring/web'
 
+
 interface CarouselContent {
+  title: string,
   videoSrc: string,
   blurb: React.ReactNode
   url: string,
@@ -29,9 +32,9 @@ export default function Carousel({ contents }: CarouselProps) {
     contents[activeIndex],
     {
       ref: transRef,
-      from: { opacity: 0, transform: 'translate(100%)' },
+      from: { opacity: 0, transform: 'translate(-50%)' },
       enter: { opacity: 1, transform: 'translate(0%)' },
-      leave: { opacity: 0, transform: 'translate(-100%)' },
+      leave: { opacity: 0, transform: 'translate(50%)' },
     });
 
   const incrementIndex = () => setActiveIndex(i => (i + 1) % contents.length);
@@ -41,26 +44,46 @@ export default function Carousel({ contents }: CarouselProps) {
     transRef.start()
   }, [activeIndex])
 
-  return <div>
-    <div className="d-flex justify-content-center" style={{ height: TOTAL_HEIGHT }}>
+  return <div className='d-flex justify-content-between flex-wrap'>
+    <div className="border border-dark mb-3">
+      {
+        contents.map((content, i) => {
+          return <div
+            key={i}
+            className="d-flex justify-content-center m-2"
+            style={{
+              backgroundColor: i === activeIndex ? "lightgray" : "white",
+              cursor: "pointer",
+            }}
+            onClick={() => setActiveIndex(i)}
+          >
+            {content.title}
+          </div>
+        })
+      }
+    </div>
+    <div className="d-flex justify-content-center" style={{ width: "40rem", height: VIDEO_HEIGHT }}>
       {transitions((style, data) => {
         return (
           <animated.div className="position-absolute" style={style}>
             <video
               muted
               autoPlay
+              controls
               src={data.videoSrc}
-              style={{ height: VIDEO_HEIGHT }}
+              style={{ maxWidth: "100%", maxHeight: VIDEO_HEIGHT }}
               onEnded={() => setTimeout(incrementIndex, 1000)}
               className="mx-auto"
             />
-            <div className="mx-auto" style={{ width: "20rem", height: BLURB_HEIGHT, overflow: "scroll" }}>
-              {data.blurb}
-            </div>
           </animated.div>
         )
       })}
     </div>
+    <div className="mt-3" >
+      {contents[activeIndex].blurb}
+      <div className='mt-3'>
+        <a href={contents[activeIndex].url}>See More <ArrowRight /></a>
+      </div>
+    </div>
   </div>
-
 }

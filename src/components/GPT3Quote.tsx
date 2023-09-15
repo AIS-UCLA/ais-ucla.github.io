@@ -1,5 +1,4 @@
 import React, { CSSProperties, useEffect } from "react";
-import style from "react-syntax-highlighter/dist/cjs/styles/prism/base16-ateliersulphurpool.light";
 import { useWindupString, defaultGetPace } from "windups";
 
 type Quote = {
@@ -92,32 +91,49 @@ const quoteList: Quote[] = [
 
 
 function GPT3Quote(props: { style?: CSSProperties, className?: string }) {
-  const [state, setState] = React.useState({ index: 0, paused: false });
+  // if the animation is paused
+  const [paused, setPaused] = React.useState(false);
+  // which quote is being displayed
+  const [index, setIndex] = React.useState(0);
+
+  const [str, { pause, resume, isFinished }] = useWindupString(
+    quoteList[index].quote,
+    { pace: (c) => 2 * defaultGetPace(c, undefined) }
+  );
+
 
   useEffect(() => {
-    if (state.paused) {
+    if (isFinished && !paused) {
       const cancelVal = setTimeout(
-        () => setState(({ index }) => ({ paused: false, index: (index + 1) % quoteList.length })),
+        () => setIndex((index + 1) % quoteList.length),
         5000
       );
       return () => clearTimeout(cancelVal);
     } else {
       return undefined;
     }
-  }, [state]);
+  }, [isFinished, paused]);
 
-  const [str] = useWindupString(
-    quoteList[state.index].quote,
-    {
-      pace: (c) => 2 * defaultGetPace(c, undefined),
-      onFinished: () => setState(({ index, paused }) => ({ index, paused: true }))
+  const pauseQuote = () => {
+    if (!isFinished) {
+      pause()
     }
-  );
+    setPaused(true)
+
+  }
+
+  const resumeQuote = () => {
+    if (!isFinished) {
+      resume()
+    }
+    setPaused(false)
+  }
 
   return <span
     style={props.style}
     className={props.className}
     children={str === "" ? "..." : str}
+    onClick={paused ? resumeQuote : pauseQuote}
   />
 
 }

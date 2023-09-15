@@ -1,10 +1,9 @@
-import { useMediaQuery } from "react-responsive";
 import Layout from "../components/Layout";
 import Section from "../components/Section";
+import AsideCard from "../components/AsideCard";
 
-import { CaretDownFill } from "react-bootstrap-icons";
+
 import Logo from "../assets/logo.png";
-import Banner from "../assets/banner.png";
 
 import GPT3Quote from "../components/GPT3Quote";
 
@@ -65,41 +64,55 @@ const Home = () => (
           </div>
         </div>
       </Section>
-      <Section id="projects" name="Past Projects">
-        <Carousel
-          contents={[
-            {
-              blurb: <div>
-                We trained a Reinforcement Learning agent to drive a car using
-                the Metadrive driving simulator.
-              </div>,
-              videoSrc: MetadriveWebm,
-              url: "https://github.com/pimpale/mdt"
-            },
-            {
-              blurb: <div>
-              </div>,
-              videoSrc: AlphazeroWebm,
-              url: "https://github.com/wz-ml/A0-Connect4"
-            },
-            {
-              blurb: <div>
-                In this work, we simulate the popular online multi-player game 'Among Us'.
-                Inspired by works like CICERO, we use multiple models to tackle different parts of a full game.
-              </div>,
-              videoSrc: AmogusWebm,
-              url: "https://github.com/pimpale/omegasus"
-            },
-            {
-              blurb: <div>
-                This project showcases a neural network cellular automaton from the paper <HrefLink href="https://distill.pub/2020/growing-ca/" />.
-                It's able to grow a 🗿 from scratch.
-              </div>,
-              videoSrc: MoyaiWebm,
-              url: "https://github.com/wz-ml/cellularimages"
-            },
-          ]}
-        />
+      <Section id="projects" name="What We Do">
+        <p>
+
+        </p>
+        <p>
+          We've worked on a variety of projects in the past. Here are some of our favorites!
+        </p>
+        <AsideCard id="projects" title="Projects">
+          <Carousel
+            contents={[
+              {
+                title: "Metadrive",
+                blurb: <>
+                  In 2023, AI Safety at UCLA members trained a Reinforcement Learning agent to drive a car using
+                  the Metadrive driving simulator.
+                </>,
+                videoSrc: MetadriveWebm,
+                url: "https://github.com/pimpale/mdt"
+              },
+              {
+                title: "AlphaZero",
+                blurb: <>
+                  In 2023, we ran a tournament to design AI algorithms that played Connect4.
+                  An implementation of Deepmind's <a href="https://en.wikipedia.org/wiki/AlphaZero">AlphaZero</a> algorithm was the winner!
+                </>,
+                videoSrc: AlphazeroWebm,
+                url: "https://github.com/wz-ml/A0-Connect4"
+              },
+              {
+                title: "OmegaSUS",
+                blurb: <>
+                  In this work, we simulate the popular online multi-player game 'Among Us'.
+                  Inspired by works like CICERO, we use multiple models to tackle different parts of a full game.
+                </>,
+                videoSrc: AmogusWebm,
+                url: "https://github.com/pimpale/omegasus"
+              },
+              {
+                title: "Neural Cellular Automata",
+                blurb: <>
+                  This project, created by one of our members, implements a neural network cellular automaton from the paper <HrefLink href="https://distill.pub/2020/growing-ca/" />.
+                  It's able to grow a 🗿 from scratch.
+                </>,
+                videoSrc: MoyaiWebm,
+                url: "https://github.com/wz-ml/cellularimages"
+              },
+            ]}
+          />
+        </AsideCard>
       </Section>
       <Section id="join" name="Join">
         <h5>Intro </h5>
@@ -150,8 +163,6 @@ const Home = () => (
 
 import React from "react";
 import { createRoot } from "react-dom/client";
-
-import ReactDOM from "react-dom";
 
 // Bootstrap CSS & JS
 import "bootstrap/dist/js/bootstrap";

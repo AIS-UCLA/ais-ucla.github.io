@@ -124,12 +124,9 @@ const Home = () => (
         </p>
       </Section>
       <Section id="pastprojects" name="Past Projects">
-        <p>
-          Note: Since we’re a new club (created in the summer of 2022), there aren’t that many old projects to look at yet.
-        </p>
       </Section>
       <Project
-        id="vulkan-voxel-renderer"
+        id="critica"
         title="Critica"
         blurb="Test your critical reading skills by trying to distinguish between GPT3 completed text and the real thing"
         begindate={parse("Mar 2022", "MMM y", new Date())}
