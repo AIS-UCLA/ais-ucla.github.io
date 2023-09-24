@@ -65,7 +65,13 @@ const Home = () => (
       </Section>
       <Section id="projects" name="What We Do">
         <p>
-
+          We think that the best way to make progress on the problem of AI safety is getting more people to focus their careers on AI safety research,
+          in fields like <a href="https://transformer-circuits.pub/2022/mech-interp-essay/index.html">mechanistic interpretability</a>
+          , <a href="https://adversarial-ml-tutorial.org/introduction/">adversarial robustness</a>,
+          or <a href="https://www.techtarget.com/searchenterpriseai/definition/AI-governance">AI governance</a>.
+        </p>
+        <p>
+          We exist to help people interested in this problem skill up in machine learning, by working on projects that they can both learn from and add to their portfolios.
         </p>
         <p>
           We've worked on a variety of projects in the past. Here are some of our favorites!
@@ -113,47 +119,26 @@ const Home = () => (
           />
         </AsideCard>
       </Section>
-      <Section id="join" name="Join">
-        <h5>Intro </h5>
+      <Section id="join" name="Get Involved!">
         <p>
-          The Intro to AI Safety Program is a 7 week, quarter-long course
-          which explores the impact of increasingly powerful AI
-          systems on society, explains the problems which the AI
-          safety field is currently working on, and goes over
-          active areas of research.
+          There are a variety of ways for you to get involved with our club:
         </p>
         <p>
-          <b><a href="/join.html#intro">Learn More</a></b>
-        </p>
-        <h5>MLAB</h5>
-        <p>
-          MLAB is an intensive technical machine learning course that builds a foundation for advanced techniques
-          from basic skills.
-          The course was created by Redwood Research (a leading AI safety research company based out of Berkeley, CA)
-          to skill up potential AI safety researchers.
-
-          This is the next step in AI Safety at UCLA.
-          We recommend everyone who has completed the Intro Fellowship apply!
-          Our program will consist of ~1 week's worth of MLAB 2 content over 6 weeks.
+          <b>Join us for our Fall 2023 General Meeting</b>: <HrefLink href="https://forms.gle/TmyRMtpG97DA9t7Y7" />
         </p>
         <p>
-          <b><a href="/join.html#mlab">Learn More</a></b>
+          <b>Apply to the Intro Fellowship</b>: <HrefLink href="https://forms.gle/v5Ujjo6NvjE5bDsRA" />
+        </p>
+        <p>
+          <b>Talk to us on Discord</b>: <HrefLink href="https://discord.gg/37TzSyrwmf" />
         </p>
       </Section>
-      <Section id="events" name="Events">
+      <Section id="newsletter" name="Newsletter">
         <p>
-          We host events throughout the quarter. Meet with other talented people in the broader AI safety community and work on challenging problems!
+          If you'd like to stay up to date with the events we're running, as well as AI Safety opportunities, sign up for our newsletter!
         </p>
         <p>
-          <a href="/events.html"><b>Learn More</b></a>
-        </p>
-      </Section>
-      <Section id="projects" name="Projects">
-        <p>
-          If you have AI safety project ideas, we would love to hear them!
-        </p>
-        <p>
-          <b>Project application</b>: <HrefLink href="https://airtable.com/shr9qTP5wgMevAY9e" />
+          <b>Newsletter</b>: <HrefLink href="http://eepurl.com/h9dY9P" />
         </p>
       </Section>
     </div>
