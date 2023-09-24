@@ -7,7 +7,11 @@ import Section from "../components/Section";
 import { CaretDownFill } from "react-bootstrap-icons";
 import HrefLink from "../components/HrefLink";
 
-import CriticaScreenshot from "../assets/projects/critica.png";
+import MetadriveWebm from '../assets/projects/metadrive/scenario_0_closed_loop.webm';
+import AlphazeroWebm from '../assets/projects/alphazero/alphazero.webm';
+import AmogusWebm from '../assets/projects/omegasus/amogus.webm';
+import MoyaiWebm from '../assets/projects/neural-cellular-automaton/moyai.webm';
+import CriticaScreenshot from "../assets/projects/critica/critica.png";
 
 type ToggleableImageListProps = {
   children: React.ReactNode[],
@@ -23,7 +27,7 @@ const ToggleableImageList = (props: ToggleableImageListProps) => {
 
   const compressedStyle = {
     overflow: "hidden" as const,
-    maxHeight: "10rem",
+    maxHeight: "30rem",
     mask: `linear-gradient(180deg, black, rgba(255, 255, 255, ${opacity})) center bottom/100% 5rem no-repeat, linear-gradient(180deg, black, black) center top/100% calc(100% - 5rem) no-repeat`,
     WebkitMask: `linear-gradient(180deg, black, rgba(255, 255, 255, ${opacity})) center bottom/100% 5rem no-repeat, linear-gradient(180deg, black, black) center top/100% calc(100% - 5rem) no-repeat`
   }
@@ -36,7 +40,11 @@ const ToggleableImageList = (props: ToggleableImageListProps) => {
     >
       {props.children.map((c, i) => <div key={i} className="col d-flex justify-content-center">{c}</div>)}
     </div>
-    <button className='btn btn-primary' onClick={() => setExpanded(!expanded)}>{expanded ? "Hide" : "Show"}</button>
+    <button className='btn btn-primary mt-4' onClick={() => setExpanded(!expanded)}>{
+      expanded
+        ? "Collapse"
+        : "Show"
+    }</button>
   </div>
 }
 
@@ -125,6 +133,85 @@ const Home = () => (
       </Section>
       <Section id="pastprojects" name="Past Projects">
       </Section>
+      <Project
+        id="metadrive"
+        title="Metadrive"
+        blurb="Reinforcement Learning to Drive a Car"
+        begindate={parse("Mar 2023", "MMM y", new Date())}
+        enddate={parse("Jun 2023", "MMM y", new Date())}
+        explanation={<>
+          <p>
+            In 2023, AI Safety at UCLA members trained a Reinforcement Learning agent to drive a car using
+            the Metadrive driving simulator.
+          </p>
+          <p>
+            We worked in conjunction with Prof. Bolei Zhou's lab to develop these tutorials.
+          </p>
+        </>}
+        images={[
+          <video src={MetadriveWebm} muted autoPlay controls className="border border-dark w-50" />
+        ]}
+        links={[
+          { key: "Source code", url: "https://github.com/pimpale/mdt" },
+        ]}
+      />
+      <Project
+        id="alphazero"
+        title="Alpha Zero Connect4"
+        blurb="We ran a tournament to design AI algorithms that played Connect4."
+        begindate={parse("Mar 2023", "MMM y", new Date())}
+        enddate={parse("Jun 2023", "MMM y", new Date())}
+        explanation={<>
+          <p>
+            In 2023, we ran a tournament to design AI algorithms that played Connect4.
+            An implementation of Deepmind's <a href="https://en.wikipedia.org/wiki/AlphaZero">AlphaZero</a> algorithm was the winner!
+          </p>
+        </>}
+        images={[
+          <video src={AlphazeroWebm} muted autoPlay controls className="border border-dark w-75" />
+        ]}
+        links={[
+          { key: "Source code", url: "https://github.com/wz-ml/A0-Connect4" },
+        ]}
+      />
+      <Project
+        id="omegasus"
+        title="OmegaSUS"
+        blurb="Building an Among Us Bot using Reinforcement Learning"
+        begindate={parse("Mar 2023", "MMM y", new Date())}
+        enddate={parse("Jun 2023", "MMM y", new Date())}
+        explanation={<>
+          <p>
+            In this work, we simulate the popular online multi-player game 'Among Us'.
+            Inspired by works like CICERO, we use multiple models to tackle different parts of a full game.
+          </p>
+        </>}
+        images={[
+          <video src={AmogusWebm} muted autoPlay controls className="border border-dark w-50" />
+        ]}
+        links={[
+          { key: "Source code", url: "https://github.com/pimpale/omegasus" },
+        ]}
+      />
+      <Project
+        id="omegasus"
+        title="Neural Cellular Automata"
+        blurb="Growing a Moyai from a single pixel."
+        begindate={parse("Mar 2023", "MMM y", new Date())}
+        enddate={parse("Jun 2023", "MMM y", new Date())}
+        explanation={<>
+          <p>
+            This project, created by one of our members, implements a neural network cellular automaton from the paper <HrefLink href="https://distill.pub/2020/growing-ca/" />.
+            It's able to grow a 🗿 from scratch.
+          </p>
+        </>}
+        images={[
+          <video src={MoyaiWebm} muted autoPlay controls className="border border-dark w-50" />
+        ]}
+        links={[
+          { key: "Source code", url: "https://github.com/wz-ml/A0-Connect4" },
+        ]}
+      />
       <Project
         id="critica"
         title="Critica"

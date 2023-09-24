@@ -1,17 +1,16 @@
 import Layout from "../components/Layout";
 import Section from "../components/Section";
 import AsideCard from "../components/AsideCard";
-
+import Carousel from '../components/Carousel';
 
 import Logo from "../assets/logo.png";
 
 import GPT3Quote from "../components/GPT3Quote";
 
-import MetadriveWebm from '../assets/carousel/scenario_0_closed_loop.webm';
-import AlphazeroWebm from '../assets/carousel/alphazero.webm';
-import AmogusWebm from '../assets/carousel/amogus.webm';
-import MoyaiWebm from '../assets/carousel/moyai.webm';
-import Carousel from '../components/Carousel';
+import MetadriveWebm from '../assets/projects/metadrive/scenario_0_closed_loop.webm';
+import AlphazeroWebm from '../assets/projects/alphazero/alphazero.webm';
+import AmogusWebm from '../assets/projects/omegasus/amogus.webm';
+import MoyaiWebm from '../assets/projects/neural-cellular-automaton/moyai.webm';
 
 const Home = () => (
   <Layout>
