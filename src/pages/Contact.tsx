@@ -15,32 +15,31 @@ const Contact = () => (
           <li>Interests: Reinforcement Learning, Z3, Proof Solvers, Cybersecurity, Linux</li>
         </ul>
         <p>
-          <b>Aiden Ament</b> - Fellowship Director
+          <b>Aiden Ament</b> - Board Member
         </p>
         <ul>
           <li>Interests: Out of Distribution detection, ML Research, general mathematics</li>
         </ul>
         <p>
-          <b>Sophia Chen</b> - Vice President
+          <b>Christopher Milan</b> - Board Member
         </p>
         <ul>
-          <li>Interests: Electrical Engineering, MLSS Program</li>
+          <li>Interests: Computer Vision, Mathematics, Systems Programming</li>
         </ul>
         <p>
-          <b>Mario Peng</b> - Research Director
+          <b>Mario Peng</b> - Board Member
         </p>
         <ul>
           <li>Interests: NLP, Semantics, Academic Research </li>
         </ul>
         <p>
-          <b>Tejas Kamtam</b> - Head of Workshops and Projects
+          <b>Tejas Kamtam</b> - Board Member
         </p>
-
         <ul>
           <li>Interests: Time series forecasting, NLU, quantum computing</li>
         </ul>
         <p>
-          <b>William Zhou</b> - Director of Workshops and Computational Resources
+          <b>William Zhou</b> - Board Member
         </p>
         <ul>
           <li>Interests: Simulated Annealing, Kaggle, Interpretability (ML)</li>

@@ -122,15 +122,6 @@ const Home = () => (
           </li>
         </ul>
       </Section>
-      <Section id="proposal" name="Project Proposal">
-        <p>
-          We are excited to support you in pursuing AI safety research!
-          If you have an AI safety research project you are interested in, please fill out the project proposal form!
-        </p>
-        <p>
-          <b>Apply Here</b>: <HrefLink href="https://airtable.com/shr9qTP5wgMevAY9e" />
-        </p>
-      </Section>
       <Section id="pastprojects" name="Past Projects">
       </Section>
       <Project
