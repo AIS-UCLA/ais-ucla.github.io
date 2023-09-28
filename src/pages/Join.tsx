@@ -43,7 +43,10 @@ const JoinPage = () => (
           Applications are open for Fall Quarter 2023!
         </p>
         <p>
-          Applications will be processed on a rolling basis.
+          The deadline is October 8 at 11:59 PM!
+        </p>
+        <p>
+          We will release decisions on October 10!
         </p>
         <p>
           <b>Apply Here</b>: <HrefLink href="https://forms.gle/v5Ujjo6NvjE5bDsRA" />
