@@ -124,10 +124,7 @@ const Home = () => (
           There are a variety of ways for you to get involved with our club:
         </p>
         <p>
-          <b>Join us for our Fall 2023 General Meeting</b>: <HrefLink href="https://forms.gle/TmyRMtpG97DA9t7Y7" />
-        </p>
-        <p>
-          <b>Apply to the Intro Fellowship</b>: <HrefLink href="https://forms.gle/v5Ujjo6NvjE5bDsRA" />
+          <b>Join us for our Winter 2024 General Meeting</b>: <HrefLink href="https://forms.gle/5h7v8gAxPYaGggBh6" />
         </p>
         <p>
           <b>Talk to us on Discord</b>: <HrefLink href="https://discord.gg/37TzSyrwmf" />

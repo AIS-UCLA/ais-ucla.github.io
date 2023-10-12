@@ -40,16 +40,13 @@ const JoinPage = () => (
         </p>
         <h4>Apply</h4>
         <p>
-          Applications are open for Fall Quarter 2023!
+          Applications are closed for Fall Quarter 2023.
         </p>
         <p>
-          The deadline is October 8 at 11:59 PM!
+          The deadline was October 8 at 11:59 PM.
         </p>
         <p>
-          We will release decisions on October 10!
-        </p>
-        <p>
-          <b>Apply Here</b>: <HrefLink href="https://forms.gle/v5Ujjo6NvjE5bDsRA" />
+          We released decisions on October 11.
         </p>
       </Section>
       <Section id="art" name="Alignment Research Teams (ART)">

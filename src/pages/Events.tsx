@@ -10,22 +10,22 @@ const Home = () => (
   <Layout>
     <div id="content" className="container">
       <Section id="events" name="Events">
-        <h4>Fall 2023 General Meeting</h4>
+        <h4>Winter 2024 General Meeting</h4>
         <p>
-          Join us for our Fall 2023 General Meeting! You'll get to see the projects we're working on, meet fellow members, and learn how you can get involved with AI Safety!
+          Join us for our Winter 2024 General Meeting! You'll get to see the projects we're working on, meet fellow members, and learn how you can get involved with AI Safety!
           Both current members and prospective members are invited!
         </p>
         <p>
           We'll have snacks and free swag!
         </p>
         <p>
-          <b>Where:</b> Student Activity Center Conference Room 2
+          <b>Where:</b> TBD
         </p>
         <p>
-          <b>When:</b> Saturday, October 7 at 6:30 PM
+          <b>When:</b> TBD
         </p>
         <p>
-          <b>RSVP Here:</b> <HrefLink href="https://forms.gle/TmyRMtpG97DA9t7Y7" />
+          <b>RSVP Here:</b> <HrefLink href="https://forms.gle/5h7v8gAxPYaGggBh6" />
         </p>
       </Section>
       <Section id="past-events" name="Past Events">
