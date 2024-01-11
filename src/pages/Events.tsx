@@ -22,7 +22,7 @@ const Home = () => (
           <b>Where:</b> Ackerman Union Viewpoint Room
         </p>
         <p>
-          <b>When: January 18, 4:30-6:00 PM</b> 
+          <b>When:</b> January 18, 4:30-6:00 PM 
         </p>
         <p>
           <b>RSVP Here:</b> <HrefLink href="https://forms.gle/5h7v8gAxPYaGggBh6" />

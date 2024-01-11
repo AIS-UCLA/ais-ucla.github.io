@@ -40,13 +40,13 @@ const JoinPage = () => (
         </p>
         <h4>Apply</h4>
         <p>
-          Applications are closed for Fall Quarter 2023.
+          Applications are open for Winter Quarter 2024!
         </p>
         <p>
-          The deadline was October 8 at 11:59 PM.
+          The deadline is Sunday, January 21 at 11:59 PM.
         </p>
         <p>
-          We released decisions on October 11.
+          Apply here: <HrefLink href="https://forms.gle/Ydc7mAMKvcEvfwb4A" />
         </p>
       </Section>
       <Section id="art" name="Alignment Research Teams (ART)">
