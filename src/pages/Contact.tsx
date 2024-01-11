@@ -30,7 +30,7 @@ const Contact = () => (
           <b>Mario Peng</b> - Board Member
         </p>
         <ul>
-          <li>Interests: NLP, Semantics, Academic Research </li>
+          <li>Interests: Human-Centered AI, Multimodal AI, Interpretability, Data Augmentation, NLP</li>
         </ul>
         <p>
           <b>Tejas Kamtam</b> - Board Member

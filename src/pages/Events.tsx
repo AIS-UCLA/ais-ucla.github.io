@@ -19,10 +19,10 @@ const Home = () => (
           We'll have snacks and free swag!
         </p>
         <p>
-          <b>Where:</b> TBD
+          <b>Where:</b> Ackerman Union Viewpoint Room
         </p>
         <p>
-          <b>When:</b> TBD
+          <b>When: January 18, 4:30-6:00 PM</b> 
         </p>
         <p>
           <b>RSVP Here:</b> <HrefLink href="https://forms.gle/5h7v8gAxPYaGggBh6" />
