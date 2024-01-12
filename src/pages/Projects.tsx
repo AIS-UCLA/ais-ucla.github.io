@@ -1,5 +1,4 @@
-import format from "date-fns/format";
-import parse from "date-fns/parse";
+import { format, parse } from "date-fns";
 import { useMediaQuery } from "react-responsive";
 import Layout from "../components/Layout";
 import Section from "../components/Section";
@@ -108,7 +107,7 @@ const Home = () => (
           </li>
         </ul>
         <p>
-          We’re interested in a broad variety of projects. Our only criteria is that a project must:
+          We're interested in a broad variety of projects. Our only criteria is that a project must:
         </p>
         <ul>
           <li>
@@ -123,114 +122,114 @@ const Home = () => (
         </ul>
       </Section>
       <Section id="pastprojects" name="Past Projects">
+        <Project
+          id="metadrive"
+          title="Metadrive"
+          blurb="Reinforcement Learning to Drive a Car"
+          begindate={parse("Mar 2023", "MMM y", new Date())}
+          enddate={parse("Jun 2023", "MMM y", new Date())}
+          explanation={<>
+            <p>
+              In 2023, AI Safety at UCLA members trained a Reinforcement Learning agent to drive a car using
+              the Metadrive driving simulator.
+            </p>
+            <p>
+              We worked in conjunction with Prof. Bolei Zhou's lab to develop these tutorials.
+            </p>
+          </>}
+          images={[
+            <video src={MetadriveWebm} muted autoPlay controls className="border border-dark w-50" />
+          ]}
+          links={[
+            { key: "Source code", url: "https://github.com/pimpale/mdt" },
+          ]}
+        />
+        <Project
+          id="alphazero"
+          title="Alpha Zero Connect4"
+          blurb="We ran a tournament to design AI algorithms that played Connect4."
+          begindate={parse("Mar 2023", "MMM y", new Date())}
+          enddate={parse("Jun 2023", "MMM y", new Date())}
+          explanation={<>
+            <p>
+              In 2023, we ran a tournament to design AI algorithms that played Connect4.
+              An implementation of Deepmind's <a href="https://en.wikipedia.org/wiki/AlphaZero">AlphaZero</a> algorithm was the winner!
+            </p>
+          </>}
+          images={[
+            <video src={AlphazeroWebm} muted autoPlay controls className="border border-dark w-75" />
+          ]}
+          links={[
+            { key: "Source code", url: "https://github.com/wz-ml/A0-Connect4" },
+          ]}
+        />
+        <Project
+          id="omegasus"
+          title="OmegaSUS"
+          blurb="Building an Among Us Bot using Reinforcement Learning"
+          begindate={parse("Mar 2023", "MMM y", new Date())}
+          enddate={parse("Jun 2023", "MMM y", new Date())}
+          explanation={<>
+            <p>
+              In this work, we simulate the popular online multi-player game 'Among Us'.
+              Inspired by works like CICERO, we use multiple models to tackle different parts of a full game.
+            </p>
+          </>}
+          images={[
+            <video src={AmogusWebm} muted autoPlay controls className="border border-dark w-50" />
+          ]}
+          links={[
+            { key: "Source code", url: "https://github.com/pimpale/omegasus" },
+          ]}
+        />
+        <Project
+          id="omegasus"
+          title="Neural Cellular Automata"
+          blurb="Growing a Moyai from a single pixel."
+          begindate={parse("Mar 2023", "MMM y", new Date())}
+          enddate={parse("Jun 2023", "MMM y", new Date())}
+          explanation={<>
+            <p>
+              This project, created by one of our members, implements a neural network cellular automaton from the paper <HrefLink href="https://distill.pub/2020/growing-ca/" />.
+              It's able to grow a 🗿 from scratch.
+            </p>
+          </>}
+          images={[
+            <video src={MoyaiWebm} muted autoPlay controls className="border border-dark w-50" />
+          ]}
+          links={[
+            { key: "Source code", url: "https://github.com/wz-ml/A0-Connect4" },
+          ]}
+        />
+        <Project
+          id="critica"
+          title="Critica"
+          blurb="Test your critical reading skills by trying to distinguish between GPT3 completed text and the real thing"
+          begindate={parse("Mar 2022", "MMM y", new Date())}
+          enddate={parse("Jun 2022", "MMM y", new Date())}
+          explanation={<>
+            <p>
+              Oftentimes, when we skim an article, we fail to engage with the actual point of the text, simply reading the words without really understanding them.
+              GPT3 is a large language model that is notorious for this as well.
+              It has no "real" understanding of anything, but is an expert at writing plausible sounding continuations of any text.
+            </p>
+            <p>
+              Critica forces the reader to discriminate between 3 AI generated distractors and 1 true article completion in order to keep reading the article.
+              In doing so, we hope to ensure that the reader knows what's really going on in the article.
+            </p>
+          </>}
+          images={[
+            <img src={CriticaScreenshot} className="border border-dark w-100" alt="Demo of Critica" />
+          ]}
+          links={[
+            { key: "Demo", url: "https://critica.ais-ucla.org" },
+            { key: "Source code", url: "https://github.com/ais-ucla/critica" },
+            { key: "Inspired by", url: "https://www.gwern.net/Fake-Journal-Club" },
+          ]}
+        />
       </Section>
-      <Project
-        id="metadrive"
-        title="Metadrive"
-        blurb="Reinforcement Learning to Drive a Car"
-        begindate={parse("Mar 2023", "MMM y", new Date())}
-        enddate={parse("Jun 2023", "MMM y", new Date())}
-        explanation={<>
-          <p>
-            In 2023, AI Safety at UCLA members trained a Reinforcement Learning agent to drive a car using
-            the Metadrive driving simulator.
-          </p>
-          <p>
-            We worked in conjunction with Prof. Bolei Zhou's lab to develop these tutorials.
-          </p>
-        </>}
-        images={[
-          <video src={MetadriveWebm} muted autoPlay controls className="border border-dark w-50" />
-        ]}
-        links={[
-          { key: "Source code", url: "https://github.com/pimpale/mdt" },
-        ]}
-      />
-      <Project
-        id="alphazero"
-        title="Alpha Zero Connect4"
-        blurb="We ran a tournament to design AI algorithms that played Connect4."
-        begindate={parse("Mar 2023", "MMM y", new Date())}
-        enddate={parse("Jun 2023", "MMM y", new Date())}
-        explanation={<>
-          <p>
-            In 2023, we ran a tournament to design AI algorithms that played Connect4.
-            An implementation of Deepmind's <a href="https://en.wikipedia.org/wiki/AlphaZero">AlphaZero</a> algorithm was the winner!
-          </p>
-        </>}
-        images={[
-          <video src={AlphazeroWebm} muted autoPlay controls className="border border-dark w-75" />
-        ]}
-        links={[
-          { key: "Source code", url: "https://github.com/wz-ml/A0-Connect4" },
-        ]}
-      />
-      <Project
-        id="omegasus"
-        title="OmegaSUS"
-        blurb="Building an Among Us Bot using Reinforcement Learning"
-        begindate={parse("Mar 2023", "MMM y", new Date())}
-        enddate={parse("Jun 2023", "MMM y", new Date())}
-        explanation={<>
-          <p>
-            In this work, we simulate the popular online multi-player game 'Among Us'.
-            Inspired by works like CICERO, we use multiple models to tackle different parts of a full game.
-          </p>
-        </>}
-        images={[
-          <video src={AmogusWebm} muted autoPlay controls className="border border-dark w-50" />
-        ]}
-        links={[
-          { key: "Source code", url: "https://github.com/pimpale/omegasus" },
-        ]}
-      />
-      <Project
-        id="omegasus"
-        title="Neural Cellular Automata"
-        blurb="Growing a Moyai from a single pixel."
-        begindate={parse("Mar 2023", "MMM y", new Date())}
-        enddate={parse("Jun 2023", "MMM y", new Date())}
-        explanation={<>
-          <p>
-            This project, created by one of our members, implements a neural network cellular automaton from the paper <HrefLink href="https://distill.pub/2020/growing-ca/" />.
-            It's able to grow a 🗿 from scratch.
-          </p>
-        </>}
-        images={[
-          <video src={MoyaiWebm} muted autoPlay controls className="border border-dark w-50" />
-        ]}
-        links={[
-          { key: "Source code", url: "https://github.com/wz-ml/A0-Connect4" },
-        ]}
-      />
-      <Project
-        id="critica"
-        title="Critica"
-        blurb="Test your critical reading skills by trying to distinguish between GPT3 completed text and the real thing"
-        begindate={parse("Mar 2022", "MMM y", new Date())}
-        enddate={parse("Jun 2022", "MMM y", new Date())}
-        explanation={<>
-          <p>
-            Oftentimes, when we skim an article, we fail to engage with the actual point of the text, simply reading the words without really understanding them.
-            GPT3 is a large language model that is notorious for this as well.
-            It has no "real" understanding of anything, but is an expert at writing plausible sounding continuations of any text.
-          </p>
-          <p>
-            Critica forces the reader to discriminate between 3 AI generated distractors and 1 true article completion in order to keep reading the article.
-            In doing so, we hope to ensure that the reader knows what's really going on in the article.
-          </p>
-        </>}
-        images={[
-          <img src={CriticaScreenshot} className="border border-dark w-100" alt="Demo of Critica" />
-        ]}
-        links={[
-          { key: "Demo", url: "https://critica.ais-ucla.org" },
-          { key: "Source code", url: "https://github.com/ais-ucla/critica" },
-          { key: "Inspired by", url: "https://www.gwern.net/Fake-Journal-Club" },
-        ]}
-      />
     </div>
-  </Layout>
+  </Layout >
 );
 
 import React from "react";

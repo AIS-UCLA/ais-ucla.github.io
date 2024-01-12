@@ -10,7 +10,7 @@ export default defineConfig({
   root: path.resolve(__dirname, "src"),
   plugins: [
     react(),
-    multiInput(),
+    multiInput.default(),
   ],
   build: {
     assetsInlineLimit: 0,
